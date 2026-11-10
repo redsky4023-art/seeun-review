@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko" data-lesson="hist-33-industrial-revolution">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>산업화와 사회 변화 · 역사</title>
+<script src="track.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FFFFFF;--ink:#1B2340;--muted:#6B7390;--line:#E3E7EF;--soft:#F4F6FA;--accent:#C2410C;--mark:#FFE45C;--ok:#0F9B83;--okbg:#E2F5F0;--no:#C8424B;--nobg:#FCE8E6;
+  --sea:#DCEBF5;--land:#F2EBDD;--landline:#D3C4A2}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#FFA265;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E;--no:#FF8A80;--nobg:#3A1F1E;--sea:#16283A;--land:#353C4A;--landline:#545D72}}
+:root[data-theme="dark"]{--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#FFA265;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E;--no:#FF8A80;--nobg:#3A1F1E;--sea:#16283A;--land:#353C4A;--landline:#545D72}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;font-size:17px;line-height:1.8;padding:0 16px}
+.wrap{max-width:720px;margin:0 auto;padding:28px 0 64px}
+html.embed body{background:transparent;padding:0}
+html.embed .wrap{padding:8px 0 24px}
+html.embed .back{display:none}
+.back{font-size:14px;color:var(--muted);text-decoration:none}
+h1,h2,h3{font-family:"Jua","Noto Sans KR",sans-serif;font-weight:400;margin:0;line-height:1.35}
+h1{font-size:30px}
+h2{font-size:24px;margin:44px 0 14px;padding-bottom:8px;border-bottom:3px solid var(--ink)}
+h3{font-size:20px;margin:30px 0 8px}
+h3 .pg{font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--muted);margin-left:6px}
+.sub{color:var(--muted);font-size:14px;margin:6px 0 0}
+p{margin:8px 0}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:5px 0}
+b{font-weight:700}
+mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit;padding:0 1px}
+.flow{list-style:none;padding:0;margin:10px 0;display:grid;gap:6px}
+.flow li{margin:0;display:grid;grid-template-columns:64px 1fr;gap:10px;align-items:baseline}
+.flow .y{font-family:"Jua",sans-serif;color:var(--accent);font-size:17px}
+.ex{background:var(--soft);border-radius:12px;padding:12px 16px;margin:12px 0;font-size:16px}
+.ex .q{font-weight:700;display:block;margin-bottom:2px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;color:var(--muted);font-size:15.5px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:16px;margin:10px 0}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{white-space:nowrap;font-weight:700}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;color:var(--accent);font-weight:700}
+.mapbox{margin:14px 0}
+.mapscroll{overflow-x:auto;border-radius:12px;border:1px solid var(--line);-webkit-overflow-scrolling:touch}
+.mm{display:block;width:100%;min-width:600px;height:auto;background:var(--sea)}
+.mm .land{fill:var(--land);stroke:var(--landline);stroke-width:calc(var(--u)*0.7)}
+.mm .rg{stroke:#fff;stroke-width:calc(var(--u)*1.5);opacity:.9}
+.mm .faint .rg{opacity:.3}
+.mm .rname{font-family:"Jua",sans-serif;font-size:calc(var(--u)*15px);fill:#1B2340;paint-order:stroke;stroke:rgba(255,255,255,.7);stroke-width:calc(var(--u)*3);stroke-linejoin:round}
+.mm .place{font-size:calc(var(--u)*12px);font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:calc(var(--u)*3.5);stroke-linejoin:round;font-family:"Noto Sans KR",sans-serif}
+.mm .geo{font-size:calc(var(--u)*12px);fill:#5B8DB0;font-style:italic;font-family:"Noto Sans KR",sans-serif}
+.mm .dot{fill:#7A1F1F;stroke:#fff;stroke-width:calc(var(--u)*1.5)}
+.mm .camp{fill:none;stroke:#B3261E;stroke-width:calc(var(--u)*2.2);stroke-dasharray:calc(var(--u)*6) calc(var(--u)*4);stroke-linecap:round}
+.mm .landrt{fill:none;stroke:#7A4B12;stroke-width:calc(var(--u)*3);stroke-linecap:round}
+.mm .seart{fill:none;stroke:#1D4E89;stroke-width:calc(var(--u)*3);stroke-linecap:round;stroke-dasharray:calc(var(--u)*9) calc(var(--u)*5)}
+.cap{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+.keys{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.keys li{margin:0;padding:10px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(96px,30%) 1fr;gap:12px}
+.keys b{color:var(--accent)}
+@media (max-width:520px){.keys li{grid-template-columns:1fr;gap:2px}}
+.essay{margin:18px 0}
+.essay .q{font-weight:700}
+.essay .a{background:var(--okbg);border-radius:12px;padding:12px 16px;margin-top:6px;font-size:16px}
+.quiz{background:var(--soft);border-radius:16px;padding:18px}
+.quiz .qt{font-family:"Jua",sans-serif;font-size:21px;line-height:1.45}
+.opts{display:grid;gap:8px;margin-top:12px}
+.opts button,.qbtn{font:inherit;font-size:16px;text-align:left;border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:11px 14px;cursor:pointer}
+.opts button.right{border-color:var(--ok);background:var(--okbg)}
+.opts button.wrong{border-color:var(--no);background:var(--nobg)}
+.why{font-size:15.5px;margin-top:10px;color:var(--ink)}
+.qfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.qnum{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.qbtn.main{background:var(--ink);color:var(--bg);border-color:var(--ink);text-align:center;font-weight:700}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+
+.muted{color:var(--muted);font-weight:400}
+.story{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
+@media (max-width:620px){.story{grid-template-columns:1fr 1fr}.story div:last-child{grid-column:1/-1}}
+.story div{background:var(--soft);border-radius:14px;padding:12px;display:grid;gap:2px;justify-items:center;text-align:center}
+.story .ic{font-size:34px;line-height:1.1}
+.story b{font-family:"Jua",sans-serif;font-weight:400;font-size:19px;color:var(--accent)}
+.story span:last-child{font-size:13.5px;line-height:1.45;color:var(--muted)}
+figure{margin:0}
+figure img{display:block;width:100%;height:auto;border-radius:12px;background:var(--soft)}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+.pic.side{display:grid;grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:18px;align-items:start;margin:14px 0}
+.pic.side ul{margin-top:0}
+@media (max-width:560px){.pic.side{grid-template-columns:1fr;gap:10px}.pic.side figure{max-width:220px;margin:0 auto;text-align:center}}
+figure.wide{margin:14px 0}
+.lead{font-family:"Jua",sans-serif;font-size:19px;margin:22px 0 8px}
+.lead .muted{font-family:"Noto Sans KR",sans-serif;font-size:14px}
+.word{background:var(--soft);border-radius:10px;padding:8px 12px;font-size:15px}
+.easy{border-left:4px solid var(--mark);padding:4px 0 4px 14px;font-size:16px;margin:14px 0}
+.cards3,.cards2{display:grid;gap:10px;margin:12px 0}
+.cards3{grid-template-columns:repeat(3,1fr)} .cards2{grid-template-columns:1fr 1fr}
+@media (max-width:620px){.cards3,.cards2{grid-template-columns:1fr}}
+.cards3 div,.cards2 div{background:var(--soft);border-radius:14px;padding:12px 14px;display:grid;gap:2px;align-content:start}
+.cards3 .ic,.cards2 .ic{font-size:30px;line-height:1.2}
+.cards3 b,.cards2 b{font-size:16.5px}
+.cards3 span:last-child,.cards2 span:last-child{font-size:15px;line-height:1.6}
+.waffle{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;max-width:520px;margin:6px 0 10px}
+.waffle i{aspect-ratio:1;border-radius:3px;display:block}
+.wlegend{display:grid;gap:4px;font-size:15px}
+.wlegend span{display:flex;gap:8px;align-items:baseline}
+.wlegend i{flex:none;width:14px;height:14px;border-radius:3px;display:inline-block;transform:translateY(2px)}
+.road{display:flex;align-items:center;gap:0;margin:14px 0 4px;overflow-x:auto}
+.road .st{flex:none;font-size:30px;text-align:center;line-height:1.1;display:grid}
+.road .st small{font-size:12px;color:var(--muted)}
+.road .km{flex:1 1 40px;min-width:46px;text-align:center;font-size:12.5px;font-weight:700;color:var(--accent);border-bottom:3px dashed var(--landline);margin:0 4px 16px;padding-bottom:2px}
+.swap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--soft);border-radius:14px;padding:14px;margin:14px 0}
+.swap .end{display:grid;justify-items:center;font-size:30px;line-height:1.2;text-align:center}
+.swap .end b{font-size:13px}
+.swap .arrows{display:grid;gap:8px;font-size:15px;font-weight:700}
+.swap .go{background:var(--bg);border-radius:10px;padding:6px 10px;text-align:center}
+.swap .back{background:var(--bg);border-radius:10px;padding:6px 10px;text-align:center;color:var(--accent)}
+.swap span{font-size:18px}
+@media (max-width:480px){.swap{grid-template-columns:1fr}.swap .end{grid-auto-flow:column;justify-content:center;gap:6px;font-size:22px}}
+.credit{font-size:12px;color:var(--muted);margin-top:40px;line-height:1.6}
+.flow.w li{grid-template-columns:100px 1fr}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.trio figure{text-align:center}
+.trio img{aspect-ratio:3/4;object-fit:cover;object-position:top}
+.mm .rgn{stroke:#fff;stroke-width:calc(var(--u)*0.8);opacity:.8}
+.mm .rt2{fill:none;stroke:#1D4E89;stroke-width:calc(var(--u)*2.6);stroke-linecap:round}
+.mm .rt3{fill:none;stroke:#7A4B12;stroke-width:calc(var(--u)*2.6);stroke-linecap:round;stroke-dasharray:calc(var(--u)*2) calc(var(--u)*4)}
+.mm .tag{font-size:calc(var(--u)*11.5px);font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:calc(var(--u)*3);stroke-linejoin:round;font-family:"Noto Sans KR",sans-serif}
+.pyr{display:grid;gap:4px;justify-items:center;margin:12px auto;max-width:520px}
+.pyr div{box-sizing:border-box}
+.pyr div{border-radius:10px;padding:6px 10px;text-align:center;font-size:15px;line-height:1.45;color:#1B2340}
+.pyr small{display:block;font-size:12.5px;color:#3B4460}
+.pyrside{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:stretch}
+.pyrside .lab{writing-mode:vertical-rl;font-size:13px;color:var(--muted);text-align:center;border-left:2px solid var(--line);padding:0 2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="../">← 복습방</a>
+  <h1>산업화와 사회 변화</h1>
+  <p class="sub">역사 · 해냄에듀 · 주제 33 · 교과서 160~165쪽</p>
+
+  <h2>1. 한눈에 보기</h2>
+  <div class="story">
+    <div><span class="ic">🧵</span><b>면직물</b><span>18세기 후반 영국, 면직물 기계화로 시작</span></div>
+    <div><span class="ic">⚙️</span><b>증기 기관</b><span>제임스 와트가 개량 → 공장·기차·배</span></div>
+    <div><span class="ic">💰</span><b>자본주의</b><span>자본가가 노동자를 고용해 이윤 추구</span></div>
+    <div><span class="ic">🏚️</span><b>문제</b><span>노동·도시·공해 문제 → 사회주의 등장</span></div>
+    <div><span class="ic">🛠️</span><b>개선</b><span>공장법·노동조합·공중위생·공원</span></div>
+  </div>
+  <p class="easy">핵심 질문: 기계로 상품을 대량 생산하는 산업 혁명이 일어나면서 사회는 어떻게 변했을까? → <b>농촌 사회 → 도시 중심의 산업 사회</b>로 바뀌었고, 물건은 풍부해졌지만 <b>빈부 격차와 여러 문제</b>도 생겼어.</p>
+
+  <h2>2. 교과서 내용</h2>
+
+  <h3>① 영국에서 시작된 산업 혁명<span class="pg">160쪽</span></h3>
+  <ul>
+    <li>17세기 이후 <b>영국 동인도 회사</b>가 인도에서 수입한 <mark><b>면직물</b></mark>은 <b>모직물</b>보다 염색이 잘 되고 세탁도 쉬워 인기가 많았다.</li>
+    <li>면직물은 <b>삼각 무역</b>에서 노예를 살 때 쓰는 <b>국제 상품</b>이기도 했다(130쪽 참고).</li>
+    <li>18세기에는 “인도산을 수입하지 말고 <b>우리가 직접 만들자</b>”는 생각이 커져 영국 안에서 면직물 공업이 발달했다.</li>
+    <li>그래서 <mark><b>18세기 후반 영국</b></mark>에서 <mark><b>면직물 공업의 기계화</b></mark>를 중심으로 <b>산업 혁명</b>이 시작됐다.</li>
+  </ul>
+  <p class="lead">왜 하필 영국이었을까? <span class="muted">— 산업화에 유리한 조건</span></p>
+  <div class="cards2">
+    <div><span class="ic">💰</span><b>자본</b><span>일찍 확보한 <b>식민지</b>를 <b>원료 공급지</b>와 <b>상품 판매처</b>로 활용 → 많은 <b>자본</b>을 축적(모아서 쌓음)</span></div>
+    <div><span class="ic">👷</span><b>노동력</b><span><mark><b>인클로저</b></mark>로 농촌을 떠난 농민들이 도시로 몰려듦 → 노동력이 풍부</span></div>
+  </div>
+
+  <p class="lead">영국 농민을 도시로 내몬 인클로저 <span class="muted">— 160쪽</span></p>
+  <p class="word"><b>인클로저</b> ‘울타리 치기’라는 뜻</p>
+  <ul class="flow">
+    <li><span class="y">전</span><span>농민은 마을의 <b>공유지·미개간지</b>를 함께 경작하고, 가축을 놓아 기르고, 땔감을 구하는 데 자유롭게 썼음</span></li>
+    <li><span class="y">16세기~</span><span><b>지주</b>들이 <b>양을 기르거나 농경지를 늘리려고</b> 울타리를 쳐서 공유지를 <b>사유지</b>로 만듦 (“내 영역!”)</span></li>
+    <li><span class="y">저항</span><span>일부 주민은 <b>울타리를 부수며</b> 저항</span></li>
+    <li><span class="y">결과</span><span>많은 농민이 농촌을 떠나 <b>도시로</b> → 공장 노동자가 됨 (“도시로 갈 수밖에 없네.”)</span></li>
+  </ul>
+  <p class="easy">쉽게 말하면, 함께 쓰던 땅에 울타리가 쳐지자 농민들이 일할 곳을 잃고 도시로 갔고, 그 사람들이 공장에서 일하게 된 거야.</p>
+
+  <h3>② 생산 기술의 혁신과 교통 혁명<span class="pg">161쪽</span></h3>
+  <ul>
+    <li>면직물을 만들려고 실을 뽑는 <mark><b>방적기</b></mark>와 천을 짜는 <mark><b>방직기</b></mark>가 발명됐다.</li>
+    <li>특히 <mark><b>제임스 와트</b>가 개량한 <b>증기 기관</b></mark>을 새로운 <b>동력</b>(기계를 움직이는 에너지)으로 쓰면서 면직물 생산이 빠르게 늘었다.</li>
+    <li>기계의 발명과 기술 혁신으로 <b>수공업</b> 중심 생산이 <mark><b>공장제 기계 공업</b></mark>으로 바뀌었다.</li>
+  </ul>
+  <p class="word"><b>방적기</b> 실을 <b>뽑는</b> 기계 (적 = 실 뽑기) &nbsp;·&nbsp; <b>방직기</b> 천을 <b>짜는</b> 기계 (직 = 짜기, ‘직물’의 직)</p>
+  <div class="pic side">
+    <figure><img src="img/hist-33/jenny.webp" alt="제니 방적기 판화" loading="lazy"><figcaption><b>제니 방적기</b> (1811년 판화)</figcaption></figure>
+    <ul class="flow">
+      <li><span class="y">물레</span><span>손으로 돌려 실을 한 가닥씩. 산업 혁명 전 보통 방법</span></li>
+      <li><span class="y">제니</span><span><b>18세기 중반</b> 발명. 한 번에 <b>8가닥</b> → 개량 후 <b>120가닥</b>!</span></li>
+      <li><span class="y">방직기</span><span><b>18세기 후반</b>, 증기 기관 동력으로 빠르게 천을 짬. 한 사람이 <b>여러 대</b>를 동시에!</span></li>
+    </ul>
+  </div>
+  <div class="trio" style="grid-template-columns:1fr 1fr">
+    <figure><img src="img/hist-33/watt.webp" alt="와트식 증기 기관" loading="lazy" style="aspect-ratio:4/3"><figcaption><b>와트식 증기 기관</b> — 수증기의 힘으로 기계를 돌림</figcaption></figure>
+    <figure><img src="img/hist-33/powerloom.webp" alt="1835년 면직물 공장의 방직기들" loading="lazy" style="aspect-ratio:4/3"><figcaption><b>면직물 공장</b> (1835) — 증기 동력 방직기가 줄지어 있어</figcaption></figure>
+  </div>
+  <p class="easy">제임스 와트는 18세기 후반 증기 기관을 <b>대폭 개량</b>했어. 덕분에 증기 기관의 힘을 <b>여러 기계</b>에 쓸 수 있는 길이 열렸지.</p>
+  <p class="lead">교통 혁명</p>
+  <div class="cards2">
+    <div><span class="ic">🚂</span><b>증기 기관차 (1830년대 영국)</b><span>전국이 <b>철도망</b>으로 연결 → 많은 사람과 물자를 먼 거리까지 짧은 시간에</span></div>
+    <div><span class="ic">🚢</span><b>증기선 (1850년대 미국)</b><span>돛을 단 배 <b>범선</b>을 대신해 강과 바다를 빠르고 안전하게</span></div>
+  </div>
+  <p class="easy">탐구1 답: 증기 기관의 동력을 이용한 기계 = <mark><b>방직기(면직물 공장), 증기 기관차, 증기선</b></mark>. 물레와 처음 제니 방적기는 사람 손으로 돌렸어. 증기 기관은 광산·공장 등 여러 산업에도 쓰였어.</p>
+
+  <h3>③ 자본주의 경제 체제의 성립<span class="pg">162쪽</span></h3>
+  <ul>
+    <li>기계로 대량 생산하게 되자, 생산에 필요한 <b>자본</b>(돈·공장·기계)을 가진 <mark><b>자본가</b></mark> 계급이 성장했다.</li>
+  </ul>
+  <div class="swap" aria-label="자본가는 임금을 주고, 노동자는 노동을 제공한다">
+    <div class="end">🎩<b>자본가</b></div>
+    <div class="arrows">
+      <div class="go">공장을 세워 경영 · <b>임금</b>을 줌 <span>→</span></div>
+      <div class="back" style="color:var(--accent)"><span>←</span> 공장에서 <b>일(노동)</b>을 함</div>
+    </div>
+    <div class="end">👷<b>노동자</b></div>
+  </div>
+  <ul>
+    <li>이렇게 자본가가 <mark><b>이윤</b>을 목적으로 노동자를 고용</mark>해 상품을 만드는 <mark><b>자본주의 경제 체제</b></mark>가 자리 잡았다.</li>
+    <li><b>농촌 중심 사회 → 도시 중심 산업 사회</b>. 공장 지역에 사람이 몰리며 <mark><b>도시화</b></mark>가 빠르게 진행됐다.</li>
+    <li>다양한 상품이 대량 생산돼 <b>물자가 풍부</b>해지고, 상품 이동도 더 자유로워졌다.</li>
+  </ul>
+  <ul class="flow w">
+    <li><span class="y">18세기 후반</span><span><b>영국</b>에서 시작</span></li>
+    <li><span class="y">19세기</span><span><b>유럽 여러 나라</b>(벨기에·프랑스·독일 등)와 <b>미국</b>으로 확산</span></li>
+    <li><span class="y">19세기 말</span><span><b>러시아</b>와 <b>일본</b>도 산업화 추진 → 자본주의도 널리 퍼짐</span></li>
+  </ul>
+  <p class="lead">산업 혁명이 가져온 일상생활의 변화 <span class="muted">— 162쪽</span></p>
+  <div class="cards3">
+    <div><span class="ic">⚽</span><b>축구의 대중화</b><span>상류층 스포츠 → <b>노동자</b> 중심으로 널리 퍼짐. 노동자들이 만든 구단이 오늘날까지!</span></div>
+    <div><span class="ic">🏬</span><b>백화점의 등장</b><span>다양한 물건을 전시·판매. 주요 고객은 새롭게 떠오른 <b>중산층 여성</b></span></div>
+    <div><span class="ic">☕</span><b>차 문화의 유행</b><span>상류층 음료 → <b>영국인 대다수</b>의 음료. 공장 노동자도 쉬는 시간에 차를!</span></div>
+  </div>
+  <p class="easy">탐구2 답: 산업 혁명 때 노동자들이 만든 축구 구단 — <b>맨체스터 유나이티드</b>(철도 노동자들이 만든 팀에서 시작), <b>아스널</b>(런던 무기 공장 노동자들이 만듦) 등이 있어.</p>
+
+  <h3>④ 사회·환경 문제와 사회주의 사상의 등장<span class="pg">163쪽</span></h3>
+  <ul>
+    <li>산업 혁명의 풍요는 모두에게 돌아가지 못했고 <mark><b>빈부 격차</b></mark>가 커졌다.</li>
+  </ul>
+  <div class="cards3">
+    <div><span class="ic">⛏️</span><b>노동 문제</b><span>열악한 환경, <b>장시간 노동, 저임금</b>. 여성은 더 나쁜 조건, <b>아이들</b>도 일터로</span></div>
+    <div><span class="ic">🏚️</span><b>도시 문제</b><span>인구 급증 → <b>주택·상하수도 등 위생 시설 부족</b>, 전염병과 범죄에 노출</span></div>
+    <div><span class="ic">🏭</span><b>공해 문제</b><span>공장의 <b>검은 연기·석탄 가루</b>로 공기가 오염</span></div>
+  </div>
+  <div class="pic side">
+    <figure><img src="img/hist-33/childmine.webp" alt="탄광 갱도에서 일하는 아이 그림" loading="lazy"><figcaption>탄광에서 일하는 아이 (1842년 영국 보고서 그림)</figcaption></figure>
+    <div>
+      <p class="quote" style="margin-top:0">“새벽 2시에 탄광으로 내려갑니다. 게으름을 피우면 채찍질을 당해요. 오후 2시가 되면 땅 위로 올라옵니다.”</p>
+      <ul>
+        <li>좁은 갱도에서는 <b>몸집이 작은 아이들</b>이 일했다.</li>
+        <li>임금은 적었지만 <b>가족 생계</b>에 중요한 수입원이었다.</li>
+      </ul>
+    </div>
+  </div>
+  <ul>
+    <li><b>도시 문제</b>: 공장 지대에 인구가 늘자 노동자들은 <b>작은 집들이 다닥다닥</b> 붙은 주택가에 살았다. “환기도 안 되는 비좁은 방 한 칸뿐이지만, 근처 공장에서 일해야 하니 어쩔 수 없지요.”</li>
+    <li><b>공해 문제</b>: 19세기 말 영국 셰필드는 공장 연기로 공기가 더러웠다. <b>1873년 런던</b>에선 짙은 노란 안개가 일주일간 덮어 기관지 질환으로 <b>268명</b>이 죽었다.</li>
+  </ul>
+  <div class="pic side">
+    <figure><img src="img/hist-33/moth.webp" alt="회색 얼룩나방과 검은색 얼룩나방" loading="lazy"><figcaption>회색 얼룩나방과 검은색 얼룩나방</figcaption></figure>
+    <ul class="flow w">
+      <li><span class="y">전</span><span>회색 얼룩나방이 흔함</span></li>
+      <li><span class="y">산업 혁명</span><span>석탄 가루·매연으로 <b>맨체스터</b>의 나무가 검게 → <b>검은색</b> 나방이 더 많아짐</span></li>
+      <li><span class="y">뒤</span><span>대기 오염이 줄자 다시 <b>회색</b> 나방이 많아짐</span></li>
+    </ul>
+  </div>
+  <p class="easy">검은 나무에선 검은 나방이 눈에 안 띄어 새에게 덜 잡아먹혔어. 나방 색깔만 봐도 공기가 얼마나 더러웠는지 알 수 있는 거야.</p>
+  <div class="pic side">
+    <figure><img src="img/hist-33/marx.webp" alt="마르크스 사진" loading="lazy"><figcaption>마르크스</figcaption></figure>
+    <ul>
+      <li>문제가 생기자 자본주의 체제를 비판하는 <mark><b>사회주의 사상</b></mark>이 등장했다.</li>
+      <li><mark><b>마르크스와 엥겔스</b></mark>: <b>투쟁</b>을 통해 <b>노동자가 주인</b>이 되는 사회를 만들어야 한다!</li>
+      <li class="quote" style="list-style:none">“자본주의를 무너뜨리고 토지나 공장 같은 <b>생산 수단을 공유</b>하는 사회를 만들어야 합니다.”</li>
+      <li>노동자·지식인의 호응을 얻어 <b>유럽과 미국의 사회주의 운동</b>에 영향을 줬다.</li>
+    </ul>
+  </div>
+  <p class="word"><b>함께 확인해요</b> ① 제임스 와트는 (<b>증기 기관</b>)을/를 대폭 개량해 기계의 효율을 높였다. ② 산업 혁명 이후 → <b>빈부 격차</b>, 장시간·저임금·<b>아동 노동</b>, 주택·위생 시설 부족과 <b>전염병·범죄</b>, 매연으로 인한 <b>대기 오염</b>이 생겼다.</p>
+
+  <h3>⑤ 생각 쑥쑥 탐구 — 산업화에 따른 문제를 개선하기 위한 노력들<span class="pg">164~165쪽</span></h3>
+  <p class="lead">01 노동 환경에 눈 뜬 사람들</p>
+  <ul>
+    <li><b>1818년 2월</b> 영국 <b>콜른브리지</b>의 면화 공장에서 불이 났다. 밤샘 작업하던 26명 중 탈출하지 못한 <mark><b>소녀 17명</b>이 사망</mark>했다. 추모탑에는 “마사 헤이(9세), 메리 헤이(9세) …”처럼 이름과 나이가 적혀 있다.</li>
+    <li>충격을 받은 영국 의회가 노동 실태를 조사했고, 이듬해 노동자를 보호하는 법(<mark><b>공장법</b></mark>)을 만들었다. 하지만 어긴 고용주에 대한 <b>처벌이 약해</b> 잘 지켜지지 않았다.</li>
+  </ul>
+  <table>
+    <tr><th>공장법 (1819)</th><th>공장법 (1833)</th></tr>
+    <tr><td>• <b>9세 미만</b> 어린이 고용 금지<br>• 9~16세 청소년 하루 <b>12시간</b> 이상 노동 금지</td><td>• <b>9세 미만</b> 어린이 고용 금지<br>• 9~13세 어린이 하루 <b>9시간</b> 이상 노동 금지<br>• 13~18세 청소년 하루 <b>12시간</b> 이상 노동 금지<br>• 18세 미만 <b>야간작업</b> 금지</td></tr>
+  </table>
+  <p class="easy">9살 아이도 공장에서 하루 12시간 넘게 일했다는 뜻이야. 1833년 법이 조금 더 촘촘해졌지?</p>
+  <ul class="flow w">
+    <li><span class="y">파업</span><span>노동자들이 요구를 내걸고 대규모 <b>파업</b> (예: <b>1877년 미국 철도 노동자 파업</b> — 회사가 임금을 깎자 반발)</span></li>
+    <li><span class="y">노조</span><span>저임금·장시간 노동에 맞서 <mark><b>노동조합</b></mark> 결성 → 처음엔 <b>불법</b>, 법이 바뀌며 점차 탄압받지 않게 됨</span></li>
+    <li><span class="y">19세기 후반</span><span>유럽 여러 나라 노동자가 <b>선거권</b>을 얻고 <b>노동자 정당</b>도 등장</span></li>
+  </ul>
+
+  <p class="lead">02 공중 보건의 기반을 닦은 한 의사</p>
+  <ul>
+    <li>1858년 그림: <b>템스강</b>이 세 질병(<b>디프테리아·스크로풀라·콜레라</b>)을 영국의 여신 브리타니아에게 소개하는 모습. 도시는 커졌는데 쓰레기 처리·하수 시설이 없어 오염이 심했고, 템스강 물이 전염병을 퍼뜨렸다.</li>
+  </ul>
+  <div class="pic side">
+    <figure><img src="img/hist-33/snowmap.webp" alt="존 스노의 콜레라 사망자 지도" loading="lazy"><figcaption><b>존 스노의 콜레라 지도</b> (1854, 런던) — 검은 막대 하나가 사망자 한 명</figcaption></figure>
+    <ul class="flow">
+      <li><span class="y">1854</span><span>런던에 <b>콜레라</b> 발생</span></li>
+      <li><span class="y">지도</span><span>의사 <mark><b>존 스노</b></mark>가 사망자 주소를 지도에 <b>점</b>으로 표시</span></li>
+      <li><span class="y">발견</span><span>사망자가 몰린 곳 한가운데 <b>공용 펌프</b>!</span></li>
+      <li><span class="y">해결</span><span>펌프 <b>손잡이를 떼자</b> 사망자가 더 안 생김 (오수 구덩이의 더러운 물이 흘러들었던 것)</span></li>
+      <li><span class="y">이후</span><span>영국이 <mark><b>공중위생법</b></mark>을 보완 → 전 세계로</span></li>
+    </ul>
+  </div>
+
+  <p class="lead">03 도시 환경을 개선한 사람들</p>
+  <div class="pic side">
+    <figure><img src="img/hist-33/centralpark.webp" alt="하늘에서 본 뉴욕 센트럴 파크" loading="lazy"><figcaption>하늘에서 본 뉴욕 <b>센트럴 파크</b></figcaption></figure>
+    <ul>
+      <li><b>미국</b>: 19세기 중반 노동자·실업자 수천 명이 도시 환경 개선을 요구하며 시위 → <mark><b>1857년 뉴욕 센트럴 파크</b></mark> 건설</li>
+      <li><b>영국</b>: 19세기 말 도시에도 시골처럼 쾌적한 자연환경을 갖추자는 <mark><b>‘전원도시 계획’</b></mark>. 모든 사람이 국가의 혜택을 누리고 <b>빈민가가 없는 도시</b>를 꿈꿈</li>
+      <li>1898년 책 <b>『내일의 전원도시』</b>가 전원도시 운동을 일으켜 세계 여러 곳에 전원도시가 세워졌다.</li>
+    </ul>
+  </div>
+  <p class="easy">함께 탐구해요 ① 이런 노력 덕분에 오늘날 우리에게도 <b>근로 시간 제한·어린이 노동 금지·노동조합</b>, 깨끗한 <b>상하수도</b>와 <b>공중위생</b>, 도시 속 <b>공원</b>이 생겼어.</p>
+  <p class="easy">함께 탐구해요 ② 도시 환경 개선 사례: 서울 <b>난지도</b>는 원래 서울의 쓰레기를 묻던 곳이었는데, 지금은 <b>하늘공원·난지 한강 공원</b>으로 바뀌었어.</p>
+
+  <h2>3. 꼭 외울 것</h2>
+  <ul class="keys">
+    <li><b>산업 혁명 시작</b><span>18세기 후반 영국, 면직물 공업의 기계화</span></li>
+    <li><b>면직물</b><span>모직물보다 염색·세탁 쉬움, 삼각 무역의 국제 상품</span></li>
+    <li><b>영국의 조건</b><span>식민지(원료 공급지·판매처) → 자본 / 인클로저 → 노동력</span></li>
+    <li><b>인클로저</b><span>‘울타리 치기’, 16세기 이후 지주가 양·농경지 위해 공유지를 사유지로</span></li>
+    <li><b>방적기 / 방직기</b><span>실을 뽑는 기계 / 천을 짜는 기계</span></li>
+    <li><b>제니 방적기</b><span>18세기 중반, 8가닥 → 120가닥</span></li>
+    <li><b>제임스 와트</b><span>18세기 후반 증기 기관 대폭 개량</span></li>
+    <li><b>공장제 기계 공업</b><span>수공업 → 공장에서 기계로</span></li>
+    <li><b>교통 혁명</b><span>증기 기관차(철도망), 증기선(범선 대신)</span></li>
+    <li><b>자본주의</b><span>자본가가 이윤 목적으로 노동자 고용, 노동자는 임금</span></li>
+    <li><b>확산</b><span>19세기 유럽·미국 → 19세기 말 러시아·일본</span></li>
+    <li><b>일상 변화</b><span>축구 대중화, 백화점(중산층 여성), 차 문화</span></li>
+    <li><b>문제</b><span>빈부 격차, 노동(장시간·저임금·아동), 도시(주택·위생), 공해(얼룩나방, 1873 런던 268명)</span></li>
+    <li><b>마르크스·엥겔스</b><span>사회주의, 노동자가 주인, 생산 수단 공유</span></li>
+    <li><b>콜른브리지 화재</b><span>1818, 소녀 17명 사망 → 1819 공장법</span></li>
+    <li><b>공장법 1833</b><span>9세 미만 고용 금지, 9~13세 9시간, 13~18세 12시간, 18세 미만 야간 금지</span></li>
+    <li><b>노동자의 노력</b><span>파업, 노동조합(처음 불법), 선거권·노동자 정당</span></li>
+    <li><b>존 스노</b><span>1854 콜레라 지도, 공용 펌프 → 공중위생법</span></li>
+    <li><b>도시 환경</b><span>1857 센트럴 파크, 영국 전원도시 계획(『내일의 전원도시』 1898)</span></li>
+  </ul>
+
+  <h2>4. 퀴즈</h2>
+  <h2>4. 퀴즈</h2>
+  <div class="quiz">
+    <div id="quiz">
+      <p class="qt" id="qText"></p>
+      <div class="opts" id="qOpts"></div>
+      <p class="why" id="qWhy" hidden></p>
+      <div class="qfoot"><span class="qnum" id="qNum"></span><button class="qbtn main" id="qNext" type="button" hidden>다음 →</button></div>
+    </div>
+    <div id="qEnd" hidden>
+      <p class="qt" id="qScore"></p>
+      <div class="qfoot" style="justify-content:flex-start"><button class="qbtn main" id="qRestart" type="button">새 10문제</button><button class="qbtn" id="qWrongOnly" type="button">틀린 것만 다시</button></div>
+    </div>
+  </div>
+  <p class="cap" id="qPool"></p>
+
+  <p class="credit">그림 출처: 위키미디어 공용 — 제니 방적기(W. 로리 판화 1811, 웰컴 컬렉션, CC BY 4.0), 와트식 증기 기관(Nicolás Pérez, CC BY-SA 3.0), 면직물 공장(T. 알롬 그림 1835, 퍼블릭 도메인), 탄광의 아이(1842년 영국 아동 고용 조사 보고서, 퍼블릭 도메인), 얼룩나방(Martinowksy, CC BY-SA 3.0), 마르크스(J. J. E. 메이올 1875, 퍼블릭 도메인), 존 스노의 콜레라 지도(1854, 퍼블릭 도메인), 센트럴 파크(Rsssngw, CC0)</p>
+</main>
+
+<script>
+(function(){
+  // 퀴즈
+  var QS = [
+{q:'산업 혁명이 처음 시작된 곳과 시기는?', a:'18세기 후반 영국', w:['17세기 초 프랑스','19세기 말 일본','16세기 에스파냐'], why:'면직물 공업의 기계화를 중심으로 시작됐어. (160쪽)'},
+    {q:'산업 혁명은 어떤 산업의 기계화를 중심으로 시작됐을까?', a:'면직물 공업', w:['모직물 공업','철강 공업','자동차 공업'], why:'인도산 면직물 대신 직접 만들자! (160쪽)'},
+    {q:'영국 동인도 회사가 인도에서 수입한 면직물이 인기를 끈 까닭은?', a:'모직물보다 염색이 잘 되고 세탁도 쉬워서', w:['모직물보다 훨씬 따뜻해서','영국에서만 만들 수 있어서','값이 모직물의 10배라서'], why:'그래서 수요가 많았어. (160쪽)'},
+    {q:'면직물이 삼각 무역에서 쓰인 용도는?', a:'노예를 구입할 때 쓰는 국제 상품', w:['군인의 옷','배의 돛','화폐를 찍는 재료'], why:'130쪽 삼각 무역과 연결돼. (160쪽)'},
+    {q:'영국이 산업화에 유리했던 조건이 아닌 것은?', a:'노예제를 유지하는 대농장이 많았다', w:['식민지를 원료 공급지와 상품 판매처로 활용했다','많은 자본을 축적했다','인클로저로 노동력이 풍부했다'], why:'노예제 대농장은 미국 남부 이야기야. (160쪽)'},
+    {q:'영국이 식민지를 활용한 방법으로 맞는 것은?', a:'원료 공급지와 상품 판매처', w:['노동조합 결성지','증기 기관 발명지','전원도시 건설지'], why:'이를 통해 많은 자본을 쌓았어. (160쪽)'},
+    {q:'‘인클로저’의 뜻은?', a:'울타리 치기', w:['실 뽑기','천 짜기','도시 만들기'], why:'공유지에 울타리를 쳐 사유지로 만든 거야. (160쪽)'},
+    {q:'지주들이 공유지에 울타리를 친 목적은?', a:'양을 기르거나 농경지를 확보하려고', w:['공장을 지으려고','철도를 놓으려고','농민에게 땅을 나눠 주려고'], why:'16세기 이후의 일이야. (160쪽)'},
+    {q:'인클로저가 산업 혁명에 끼친 영향은?', a:'농촌을 떠난 농민들이 도시로 몰려 노동력이 풍부해졌다', w:['농민들이 땅을 더 많이 갖게 됐다','도시 인구가 줄었다','양털 생산이 끊겼다'], why:'“도시로 갈 수밖에 없네.” (160쪽)'},
+    {q:'실을 뽑는 기계는?', a:'방적기', w:['방직기','증기선','증기 기관차'], why:'방적기 = 실, 방직기 = 천! (161쪽)'},
+    {q:'천을 짜는 기계는?', a:'방직기', w:['방적기','물레','제니 방적기'], why:'‘직물’의 직 = 짜기. (161쪽)'},
+    {q:'증기 기관을 대폭 개량한 사람은?', a:'제임스 와트', w:['존 스노','마르크스','링컨'], why:'함께 확인해요 ①의 답! 18세기 후반이야. (161쪽, 163쪽)'},
+    {q:'제임스 와트의 증기 기관 개량이 가져온 변화는?', a:'증기 기관의 동력을 여러 기계에 쓸 수 있게 됐다', w:['물레를 더 많이 쓰게 됐다','범선이 늘어났다','수공업이 더 발달했다'], why:'광산·공장·교통에 두루 쓰였어. (161쪽)'},
+    {q:'제니 방적기에 대한 설명으로 맞는 것은?', a:'처음엔 한 번에 8가닥, 개량 후 120가닥의 실을 뽑았다', w:['19세기 말에 발명됐다','천을 짜는 기계다','증기선에 쓰인 엔진이다'], why:'18세기 중반에 발명됐어. (161쪽)'},
+    {q:'산업 혁명 이전에 실을 만들던 일반적인 방법은?', a:'물레를 돌려 실을 뽑았다', w:['증기 기관으로 실을 뽑았다','방직기로 실을 뽑았다','기계 없이 실을 수입만 했다'], why:'손으로 돌리는 물레! (161쪽)'},
+    {q:'기계 발명과 기술 혁신으로 생산 방식은 어떻게 바뀌었을까?', a:'수공업 → 공장제 기계 공업', w:['공장제 기계 공업 → 수공업','농업 → 유목','공업 → 농업'], why:'공장에서 기계로 대량 생산! (161쪽)'},
+    {q:'증기 기관의 동력을 이용한 것이 아닌 것은?', a:'물레', w:['증기 기관차','증기선','면직물 공장의 방직기'], why:'물레는 사람 손으로 돌려. (161쪽 탐구1)'},
+    {q:'증기 기관차가 활발히 이용되면서 생긴 변화는?', a:'전국이 철도망으로 연결되어 사람과 물자를 빠르게 나르게 됐다', w:['범선이 다시 많아졌다','도시 인구가 줄었다','공장이 모두 시골로 옮겨 갔다'], why:'교통 혁명! (161쪽)'},
+    {q:'증기선이 대신한 배는?', a:'범선(돛을 단 배)', w:['잠수함','항공모함','뗏목'], why:'강과 바다를 빠르고 안전하게 이동했어. (161쪽)'},
+    {q:'산업 혁명으로 성장한 계급으로, 생산에 필요한 자본을 가진 사람들은?', a:'자본가', w:['노동자','귀족','농노'], why:'자본가는 공장을 세워 경영했어. (162쪽)'},
+    {q:'자본주의 경제 체제에 대한 설명으로 맞는 것은?', a:'자본가가 이윤을 목적으로 노동자를 고용해 상품을 생산한다', w:['생산 수단을 모두가 공유한다','국가가 모든 공장을 소유한다','노동자가 임금 없이 일한다'], why:'생산 수단 공유는 사회주의 주장이야. (162쪽)'},
+    {q:'산업 혁명으로 나타난 사회 변화로 맞는 것은?', a:'농촌 중심 사회가 도시 중심 산업 사회로 바뀌었다', w:['도시 인구가 크게 줄었다','물자가 부족해졌다','상품 이동이 어려워졌다'], why:'도시화가 빠르게 진행됐어. (162쪽)'},
+    {q:'19세기 말에 산업화를 추진한 나라는?', a:'러시아와 일본', w:['영국과 프랑스','인도와 이집트','에스파냐와 포르투갈'], why:'영국 → 유럽·미국(19세기) → 러시아·일본(19세기 말). (162쪽)'},
+    {q:'산업 혁명 시기 축구에 대한 설명으로 맞는 것은?', a:'노동자를 중심으로 널리 퍼졌다', w:['상류층만 즐길 수 있게 됐다','법으로 금지됐다','미국에서 처음 생겼다'], why:'노동자들이 만든 구단이 오늘날까지 이어지고 있어. (162쪽)'},
+    {q:'산업화 이후 등장한 백화점의 주요 고객은?', a:'새롭게 부상한 중산층 여성', w:['공장의 어린이 노동자','왕과 귀족','농촌의 농민'], why:'18세기 말 런던에 문을 연 백화점! (162쪽)'},
+    {q:'산업 혁명 이후 차 문화의 변화로 맞는 것은?', a:'상류층 음료에서 영국인 대다수가 즐기는 음료가 됐다', w:['차를 마시는 것이 금지됐다','상류층만 마시게 됐다','커피로 모두 바뀌었다'], why:'노동자도 쉬는 시간에 차를 마셨어. (162쪽)'},
+    {q:'산업 혁명 시기 노동자들이 겪은 문제가 아닌 것은?', a:'짧은 노동 시간과 높은 임금', w:['열악한 환경','장시간 노동','저임금'], why:'반대로 오래 일하고 적게 받았어. (163쪽)'},
+    {q:'탄광에서 몸집이 작은 아이들이 일하게 된 까닭은?', a:'좁은 갱도 작업에 이용됐기 때문', w:['아이들이 임금을 더 많이 받아서','법으로 정해져 있어서','학교가 탄광 안에 있어서'], why:'저임금이었지만 가족 생계의 중요한 수입원이었어. (163쪽)'},
+    {q:'산업 혁명 시기 도시 문제로 맞는 것은?', a:'주택과 상하수도 같은 위생 시설이 부족했다', w:['도시 인구가 줄어 빈집이 많았다','공원이 너무 많았다','전염병이 전혀 없었다'], why:'노동자 거주지는 전염병·범죄에 노출됐어. (163쪽)'},
+    {q:'산업 혁명 당시 맨체스터에서 검은색 얼룩나방이 많아진 까닭은?', a:'석탄 가루와 매연으로 나무가 검게 뒤덮여서', w:['검은 나방을 일부러 길러서','회색 나방이 모두 이주해서','나무를 모두 베어 버려서'], why:'대기 오염이 줄자 다시 회색 나방이 많아졌어. (163쪽)'},
+    {q:'1873년 런던에서 짙은 노란 안개로 일어난 일은?', a:'기관지 관련 질환으로 268명이 사망했다', w:['콜레라로 17명이 사망했다','센트럴 파크가 건설됐다','공장법이 폐지됐다'], why:'공해 문제의 대표 사례야. (163쪽)'},
+    {q:'투쟁을 통해 노동자가 주인이 되는 사회를 만들어야 한다고 주장한 사람은?', a:'마르크스와 엥겔스', w:['제임스 와트와 존 스노','그림 형제','링컨과 먼로'], why:'사회주의 사상! (163쪽)'},
+    {q:'사회주의 사상의 주장으로 맞는 것은?', a:'토지나 공장 같은 생산 수단을 공유해야 한다', w:['자본가가 이윤을 더 많이 가져야 한다','공유지에 울타리를 쳐야 한다','노예제를 확대해야 한다'], why:'자본주의를 비판했어. (163쪽)'},
+    {q:'1818년 영국 콜른브리지 면화 공장 화재에 대한 설명으로 맞는 것은?', a:'밤샘 작업하던 소녀 17명이 사망했다', w:['사망자가 한 명도 없었다','콜레라가 퍼져 268명이 사망했다','미국 철도 노동자들이 파업했다'], why:'이 사건이 영국 사회에 큰 충격을 줬어. (164쪽)'},
+    {q:'콜른브리지 화재 이후 만들어진 공장법(1819)이 잘 지켜지지 않은 까닭은?', a:'법을 어긴 고용주에 대한 처벌이 약해서', w:['노동자들이 반대해서','법이 너무 엄격해서','의회가 곧바로 폐지해서'], why:'처벌이 미약했어. (164쪽)'},
+    {q:'1833년 공장법의 내용이 아닌 것은?', a:'18세 미만 청소년 고용 완전 금지', w:['9세 미만 어린이 고용 금지','9~13세 어린이 하루 9시간 이상 노동 금지','18세 미만 청소년 야간작업 금지'], why:'18세 미만은 야간작업만 금지! 13~18세는 하루 12시간 이상 금지야. (164쪽)'},
+    {q:'1819년 공장법에서 9~16세 청소년에게 금지한 것은?', a:'하루 12시간 이상 노동', w:['하루 9시간 이상 노동','모든 노동','학교 출석'], why:'9세 미만 고용 금지도 들어 있어. (164쪽)'},
+    {q:'노동자들이 저임금·장시간 노동에 대처하기 위해 만든 단체는?', a:'노동조합', w:['동인도 회사','백화점','의회'], why:'처음엔 불법이었지만 법이 바뀌며 탄압받지 않게 됐어. (164쪽)'},
+    {q:'19세기 후반 유럽 노동자들의 변화로 맞는 것은?', a:'선거권을 얻고 노동자 정당도 등장했다', w:['노동조합이 처음으로 불법이 됐다','모두 농촌으로 돌아갔다','공장법이 사라졌다'], why:'노동자들의 노력 끝에 얻은 결과야. (164쪽)'},
+    {q:'1877년 미국 철도 노동자들이 파업한 까닭은?', a:'회사가 임금을 삭감해서', w:['공장에 불이 나서','콜레라가 퍼져서','공원을 만들어 달라고'], why:'(164쪽 사진 설명)'},
+    {q:'1854년 런던 콜레라 사망자의 주소를 지도에 표시해 원인을 찾은 의사는?', a:'존 스노', w:['제임스 와트','엥겔스','하워드'], why:'공용 펌프가 원인이었어. (165쪽)'},
+    {q:'존 스노가 펌프 손잡이를 제거하자 일어난 일은?', a:'더 이상 사망자가 발생하지 않았다', w:['콜레라가 더 퍼졌다','템스강이 깨끗해졌다','펌프가 폭발했다'], why:'오수 구덩이의 오염된 물이 흘러들었던 거야. → 공중위생법 보완. (165쪽)'},
+    {q:'1858년 그림에서 템스강이 브리타니아에게 소개한 세 질병에 들어가지 않는 것은?', a:'천연두', w:['디프테리아','스크로풀라','콜레라'], why:'템스강 물이 각종 전염병을 유행시켰어. (165쪽)'},
+    {q:'1857년 노동자·실업자의 요구로 뉴욕에 건설된 것은?', a:'센트럴 파크', w:['백화점','대륙 횡단 철도','전원도시'], why:'도시 환경 개선 시위의 결과야. (165쪽)'},
+    {q:'영국의 ‘전원도시 계획’에 대한 설명으로 맞는 것은?', a:'도시에도 시골처럼 쾌적한 자연환경을 갖추고 빈민가가 없는 도시를 만들자는 계획', w:['공유지에 울타리를 치자는 계획','도시를 없애고 농촌으로 돌아가자는 계획','공장을 더 많이 짓자는 계획'], why:'1898년 『내일의 전원도시』가 운동을 일으켰어. (165쪽)'}
+  ];
+  function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  var order=[], idx=0, right=0, wrong=[], retrying=false;
+  var qText=document.getElementById('qText'), qOpts=document.getElementById('qOpts'), qWhy=document.getElementById('qWhy'),
+      qNum=document.getElementById('qNum'), qNext=document.getElementById('qNext'), quiz=document.getElementById('quiz'), qEnd=document.getElementById('qEnd');
+  function start(list,isRetry){ retrying=!!isRetry; order=list; idx=0; right=0; wrong=[]; quiz.hidden=false; qEnd.hidden=true; show(); }
+  function show(){
+    var it=QS[order[idx]];
+    qText.textContent=it.q; qWhy.hidden=true; qNext.hidden=true;
+    qNum.textContent=(idx+1)+' / '+order.length+' · 맞힌 개수 '+right;
+    qOpts.innerHTML='';
+    shuffle([it.a].concat(it.w)).forEach(function(t){
+      var b=document.createElement('button'); b.type='button'; b.textContent=t;
+      b.onclick=function(){
+        qOpts.querySelectorAll('button').forEach(function(x){ x.disabled=true; if(x.textContent===it.a) x.classList.add('right'); });
+        if(t===it.a){ right++; } else { b.classList.add('wrong'); wrong.push(order[idx]); }
+        qWhy.textContent=(t===it.a?'⭕ 맞았어! ':'❌ 아쉽다. ')+it.why; qWhy.hidden=false;
+        qNum.textContent=(idx+1)+' / '+order.length+' · 맞힌 개수 '+right;
+        qNext.textContent=idx+1<order.length?'다음 →':'결과 보기';
+        qNext.hidden=false; qNext.focus({preventScroll:true});
+      };
+      qOpts.appendChild(b);
+    });
+  }
+  qNext.onclick=function(){ idx++; if(idx<order.length){ show(); } else { end(); } };
+  function end(){
+    quiz.hidden=true; qEnd.hidden=false; if(!retrying){ done+=order.length; SeeunTrack.quiz(right,order.length); } poolText();
+    var n=order.length;
+    document.getElementById('qScore').textContent=n+'문제 중 '+right+'개 맞혔어! '+(right===n?'완벽해 🎉':right>=n-2?'거의 다 왔어 👍':'틀린 것만 한 번 더 보자 💪');
+    document.getElementById('qWrongOnly').hidden=wrong.length===0;
+  }
+  document.getElementById('qWrongOnly').onclick=function(){ start(shuffle(wrong),true); };
+  var deck=[], pos=0, done=0;
+  function round(){
+    if(pos>=deck.length){ deck=shuffle(QS.map(function(_,i){return i})); pos=0; }
+    var r=deck.slice(pos,pos+10); pos+=10; start(r);
+  }
+  function poolText(){ document.getElementById('qPool').textContent=done>=QS.length?QS.length+'문제를 한 바퀴 다 풀었어! 👏 이제 다시 섞어서 나와.':'모두 '+QS.length+'문제 · 한 판에 10문제씩 겹치지 않게 나와 · 지금까지 '+done+'문제 풀었어'; }
+  document.getElementById('qRestart').onclick=round;
+  round(); poolText();
+})();
+</script>
+</body>
+</html>

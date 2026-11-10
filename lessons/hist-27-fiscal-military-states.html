@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ko" data-lesson="hist-27-fiscal-military-states">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>재정과 군사를 독점한 국가들 · 역사</title>
+<script src="track.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FFFFFF;--ink:#1B2340;--muted:#6B7390;--line:#E3E7EF;--soft:#F4F6FA;--accent:#C2410C;--mark:#FFE45C;--ok:#0F9B83;--okbg:#E2F5F0;--no:#C8424B;--nobg:#FCE8E6;
+  --sea:#DCEBF5;--land:#F2EBDD;--landline:#D3C4A2}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#FFA265;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E;--no:#FF8A80;--nobg:#3A1F1E;--sea:#16283A;--land:#353C4A;--landline:#545D72}}
+:root[data-theme="dark"]{--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#FFA265;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E;--no:#FF8A80;--nobg:#3A1F1E;--sea:#16283A;--land:#353C4A;--landline:#545D72}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;font-size:17px;line-height:1.8;padding:0 16px}
+.wrap{max-width:720px;margin:0 auto;padding:28px 0 64px}
+html.embed body{background:transparent;padding:0}
+html.embed .wrap{padding:8px 0 24px}
+html.embed .back{display:none}
+.back{font-size:14px;color:var(--muted);text-decoration:none}
+h1,h2,h3{font-family:"Jua","Noto Sans KR",sans-serif;font-weight:400;margin:0;line-height:1.35}
+h1{font-size:30px}
+h2{font-size:24px;margin:44px 0 14px;padding-bottom:8px;border-bottom:3px solid var(--ink)}
+h3{font-size:20px;margin:30px 0 8px}
+h3 .pg{font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--muted);margin-left:6px}
+.sub{color:var(--muted);font-size:14px;margin:6px 0 0}
+p{margin:8px 0}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:5px 0}
+b{font-weight:700}
+mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit;padding:0 1px}
+.flow{list-style:none;padding:0;margin:10px 0;display:grid;gap:6px}
+.flow li{margin:0;display:grid;grid-template-columns:64px 1fr;gap:10px;align-items:baseline}
+.flow .y{font-family:"Jua",sans-serif;color:var(--accent);font-size:17px}
+.ex{background:var(--soft);border-radius:12px;padding:12px 16px;margin:12px 0;font-size:16px}
+.ex .q{font-weight:700;display:block;margin-bottom:2px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;color:var(--muted);font-size:15.5px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:16px;margin:10px 0}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{white-space:nowrap;font-weight:700}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;color:var(--accent);font-weight:700}
+.mapbox{margin:14px 0}
+.mapscroll{overflow-x:auto;border-radius:12px;border:1px solid var(--line);-webkit-overflow-scrolling:touch}
+.mm{display:block;width:100%;min-width:600px;height:auto;background:var(--sea)}
+.mm .land{fill:var(--land);stroke:var(--landline);stroke-width:calc(var(--u)*0.7)}
+.mm .rg{stroke:#fff;stroke-width:calc(var(--u)*1.5);opacity:.9}
+.mm .faint .rg{opacity:.3}
+.mm .rname{font-family:"Jua",sans-serif;font-size:calc(var(--u)*15px);fill:#1B2340;paint-order:stroke;stroke:rgba(255,255,255,.7);stroke-width:calc(var(--u)*3);stroke-linejoin:round}
+.mm .place{font-size:calc(var(--u)*12px);font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:calc(var(--u)*3.5);stroke-linejoin:round;font-family:"Noto Sans KR",sans-serif}
+.mm .geo{font-size:calc(var(--u)*12px);fill:#5B8DB0;font-style:italic;font-family:"Noto Sans KR",sans-serif}
+.mm .dot{fill:#7A1F1F;stroke:#fff;stroke-width:calc(var(--u)*1.5)}
+.mm .camp{fill:none;stroke:#B3261E;stroke-width:calc(var(--u)*2.2);stroke-dasharray:calc(var(--u)*6) calc(var(--u)*4);stroke-linecap:round}
+.mm .landrt{fill:none;stroke:#7A4B12;stroke-width:calc(var(--u)*3);stroke-linecap:round}
+.mm .seart{fill:none;stroke:#1D4E89;stroke-width:calc(var(--u)*3);stroke-linecap:round;stroke-dasharray:calc(var(--u)*9) calc(var(--u)*5)}
+.cap{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+.keys{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.keys li{margin:0;padding:10px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(96px,30%) 1fr;gap:12px}
+.keys b{color:var(--accent)}
+@media (max-width:520px){.keys li{grid-template-columns:1fr;gap:2px}}
+.essay{margin:18px 0}
+.essay .q{font-weight:700}
+.essay .a{background:var(--okbg);border-radius:12px;padding:12px 16px;margin-top:6px;font-size:16px}
+.quiz{background:var(--soft);border-radius:16px;padding:18px}
+.quiz .qt{font-family:"Jua",sans-serif;font-size:21px;line-height:1.45}
+.opts{display:grid;gap:8px;margin-top:12px}
+.opts button,.qbtn{font:inherit;font-size:16px;text-align:left;border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:11px 14px;cursor:pointer}
+.opts button.right{border-color:var(--ok);background:var(--okbg)}
+.opts button.wrong{border-color:var(--no);background:var(--nobg)}
+.why{font-size:15.5px;margin-top:10px;color:var(--ink)}
+.qfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.qnum{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.qbtn.main{background:var(--ink);color:var(--bg);border-color:var(--ink);text-align:center;font-weight:700}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+
+.muted{color:var(--muted);font-weight:400}
+.story{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
+@media (max-width:620px){.story{grid-template-columns:1fr 1fr}.story div:last-child{grid-column:1/-1}}
+.story div{background:var(--soft);border-radius:14px;padding:12px;display:grid;gap:2px;justify-items:center;text-align:center}
+.story .ic{font-size:34px;line-height:1.1}
+.story b{font-family:"Jua",sans-serif;font-weight:400;font-size:19px;color:var(--accent)}
+.story span:last-child{font-size:13.5px;line-height:1.45;color:var(--muted)}
+figure{margin:0}
+figure img{display:block;width:100%;height:auto;border-radius:12px;background:var(--soft)}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+.pic.side{display:grid;grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:18px;align-items:start;margin:14px 0}
+.pic.side ul{margin-top:0}
+@media (max-width:560px){.pic.side{grid-template-columns:1fr;gap:10px}.pic.side figure{max-width:220px;margin:0 auto;text-align:center}}
+figure.wide{margin:14px 0}
+.lead{font-family:"Jua",sans-serif;font-size:19px;margin:22px 0 8px}
+.lead .muted{font-family:"Noto Sans KR",sans-serif;font-size:14px}
+.word{background:var(--soft);border-radius:10px;padding:8px 12px;font-size:15px}
+.easy{border-left:4px solid var(--mark);padding:4px 0 4px 14px;font-size:16px;margin:14px 0}
+.cards3,.cards2{display:grid;gap:10px;margin:12px 0}
+.cards3{grid-template-columns:repeat(3,1fr)} .cards2{grid-template-columns:1fr 1fr}
+@media (max-width:620px){.cards3,.cards2{grid-template-columns:1fr}}
+.cards3 div,.cards2 div{background:var(--soft);border-radius:14px;padding:12px 14px;display:grid;gap:2px;align-content:start}
+.cards3 .ic,.cards2 .ic{font-size:30px;line-height:1.2}
+.cards3 b,.cards2 b{font-size:16.5px}
+.cards3 span:last-child,.cards2 span:last-child{font-size:15px;line-height:1.6}
+.waffle{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;max-width:520px;margin:6px 0 10px}
+.waffle i{aspect-ratio:1;border-radius:3px;display:block}
+.wlegend{display:grid;gap:4px;font-size:15px}
+.wlegend span{display:flex;gap:8px;align-items:baseline}
+.wlegend i{flex:none;width:14px;height:14px;border-radius:3px;display:inline-block;transform:translateY(2px)}
+.road{display:flex;align-items:center;gap:0;margin:14px 0 4px;overflow-x:auto}
+.road .st{flex:none;font-size:30px;text-align:center;line-height:1.1;display:grid}
+.road .st small{font-size:12px;color:var(--muted)}
+.road .km{flex:1 1 40px;min-width:46px;text-align:center;font-size:12.5px;font-weight:700;color:var(--accent);border-bottom:3px dashed var(--landline);margin:0 4px 16px;padding-bottom:2px}
+.swap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;background:var(--soft);border-radius:14px;padding:14px;margin:14px 0}
+.swap .end{display:grid;justify-items:center;font-size:30px;line-height:1.2;text-align:center}
+.swap .end b{font-size:13px}
+.swap .arrows{display:grid;gap:8px;font-size:15px;font-weight:700}
+.swap .go{background:var(--bg);border-radius:10px;padding:6px 10px;text-align:center}
+.swap .back{background:var(--bg);border-radius:10px;padding:6px 10px;text-align:center;color:var(--accent)}
+.swap span{font-size:18px}
+@media (max-width:480px){.swap{grid-template-columns:1fr}.swap .end{grid-auto-flow:column;justify-content:center;gap:6px;font-size:22px}}
+.credit{font-size:12px;color:var(--muted);margin-top:40px;line-height:1.6}
+.mm .rt{fill:none;stroke-width:calc(var(--u)*2.6);stroke-linecap:round}
+.mm .rt.dash{stroke-dasharray:calc(var(--u)*7) calc(var(--u)*4)}
+.mm .goods{font-size:calc(var(--u)*11px);font-weight:700;font-family:"Noto Sans KR",sans-serif;paint-order:stroke;stroke:var(--sea);stroke-width:calc(var(--u)*3.5);stroke-linejoin:round}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;margin:6px 0 0}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{flex:none;width:22px;height:4px;border-radius:2px;display:inline-block}
+.bars{display:grid;gap:10px;margin:12px 0}
+.bars .row{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center;font-size:15px}
+.bars .track{display:grid;gap:4px}
+.bars .bl{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;white-space:nowrap}
+.bars .bl i{flex:none;height:20px;border-radius:5px;display:block;min-width:4px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.vs>div{background:var(--soft);border-radius:14px;padding:12px 14px}
+.vs b.t{font-family:"Jua",sans-serif;font-weight:400;font-size:18px;color:var(--accent);display:block}
+@media (max-width:520px){.vs{grid-template-columns:1fr}}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0}
+.chain span{background:var(--soft);border-radius:10px;padding:6px 10px;font-size:15px}
+.chain i{font-style:normal;color:var(--accent);font-weight:700}
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="../">← 복습방</a>
+  <h1>재정과 군사를 독점한 국가들</h1>
+  <p class="sub">역사 · 해냄에듀 · 주제 27 · 교과서 132~135쪽</p>
+
+  <h2>1. 한눈에 보기</h2>
+  <div class="story">
+    <div><span class="ic">⚔️</span><b>전쟁</b><span>구교·신교 분열로 충돌 심해짐</span></div>
+    <div><span class="ic">🏛️</span><b>재정·군사 국가</b><span>정부가 세금과 군대를 독점, 관료제·상비군</span></div>
+    <div><span class="ic">💰</span><b>중상주의</b><span>수출↑ 수입↓, 금은 확보, 식민지</span></div>
+    <div><span class="ic">👑</span><b>영국 vs 프랑스</b><span>의회 정치 vs 루이 14세 절대 왕권</span></div>
+    <div><span class="ic">🔭</span><b>과학·계몽</b><span>갈릴레이·뉴턴 → 로크·루소</span></div>
+  </div>
+
+  <h2>2. 교과서 내용</h2>
+
+  <h3>① 재정·군사 국가의 등장<span class="pg">132쪽</span></h3>
+  <ul>
+    <li><b>봉건 질서</b>가 약해지고 <b>구교와 신교</b>가 갈라지면서 유럽에서 전쟁(군사적 충돌)이 심해졌다.</li>
+    <li>각 나라는 전쟁을 하려고 <b>화약 무기</b>를 개발하고 군대를 길렀으며, 그 비용을 마련하려고 <b>정부 차원에서 세금</b>을 거뒀다.</li>
+    <li>이 과정에서 <b>정부가 군사와 재정(나라 살림 돈)을 독점</b>한 <mark><b>재정·군사 국가</b></mark>가 나타났다.</li>
+  </ul>
+  <div class="chain" aria-label="봉건 질서 쇠퇴와 종교 분열, 전쟁 증가, 화약 무기와 군대, 세금, 재정 군사 국가">
+    <span>⛪ 구교·신교 분열</span><i>→</i><span>⚔️ 전쟁 ↑</span><i>→</i><span>💣 화약 무기·군대</span><i>→</i><span>💸 돈 필요 → 세금</span><i>→</i><span>🏛️ 재정·군사 국가</span>
+  </div>
+  <div class="cards3">
+    <div><span class="ic">📋</span><b>관료제</b><span>세금 걷기 같은 나랏일을 <b>효율적으로</b> 처리하는 관리 조직</span></div>
+    <div><span class="ic">💂</span><b>상비군</b><span><b>언제든지</b> 동원할 수 있는 군대 → 전문적인 군사력 유지</span></div>
+    <div><span class="ic">👑</span><b>왕권신수설</b><span>“왕의 권력은 <b>신이 준 것</b>!” → 이것으로 왕의 힘을 정당화</span></div>
+  </div>
+  <ul>
+    <li>관료제와 상비군을 유지하려면 돈이 더 필요했다. 그래서 상공업·무역에 종사하는 <mark><b>시민 계층</b></mark>의 활동을 <b>보호</b>해 주고 그들에게서 <b>재정 지원</b>을 받았다.</li>
+    <li>그리고 상업을 중시하는 <mark><b>중상주의 정책</b></mark>을 펼쳤다.</li>
+  </ul>
+  <p class="easy">쉽게 말하면, 왕이 <b>“군대와 관리를 계속 두려면 돈이 필요해. 장사하는 사람들아, 내가 지켜 줄 테니 돈을 대 줘!”</b> 하고 손을 잡은 거야.</p>
+
+  <h3>② 돈이 곧 힘이다! 중상주의 정책<span class="pg">132쪽</span></h3>
+  <p class="lead">➊ 국내 상공업 보호</p>
+  <ul>
+    <li>부강한 나라를 만들려고 나라가 <b>경제 활동에 적극적으로 끼어들고 통제</b>했다.</li>
+    <li><mark><b>수입은 억제</b>하고 <b>수출은 장려</b></mark>하며 많은 양의 <mark><b>금과 은</b></mark>을 확보하려 했다.</li>
+    <li>일부 <b>특권 상인</b>에게 <b>무역 독점권</b>을 주고, 그 대가로 <b>헌금과 세금</b>을 정부에 바치게 했다.</li>
+  </ul>
+  <div class="swap" aria-label="중상주의 정책의 구조">
+    <div class="end">🏰<b>우리나라</b></div>
+    <div class="arrows">
+      <div class="go">📦 완성품 수출 장려 · 🚫 원료 수출 금지 <span>→</span></div>
+      <div class="back"><span>←</span> 🧾 수입품에 높은 관세 · 🚫 완성품 수입 금지</div>
+    </div>
+    <div class="end">🌍<b>다른 나라</b></div>
+  </div>
+  <p class="word"><b>관세</b> 수출되거나 수입되는 물건에 붙이는 세금</p>
+  <p class="easy">원료는 밖으로 못 나가게 하고, 우리나라에서 만든 <b>완성품을 많이 팔아서</b> 금과 은을 잔뜩 모으자는 거야. 외국 물건엔 세금을 왕창 붙여서 <b>덜 사게</b> 했고!</p>
+
+  <p class="lead">➋ 해외 시장 확보</p>
+  <ul>
+    <li><b>원료</b>를 얻고 <b>상품을 팔 시장</b>을 얻으려고 <mark><b>식민지 확보</b></mark>에도 적극적으로 나섰다.</li>
+    <li>특히 <mark><b>영국과 프랑스</b></mark>는 <b>동인도 회사</b>를 통해 아시아 곳곳을 점령해 거점을 만들고 <b>독점적인 무역</b>을 했다.</li>
+  </ul>
+  <figure class="wide"><img src="img/hist-27/bombay.webp" alt="18세기 인도 뭄바이의 영국 동인도 회사 건물과 배들을 그린 그림" loading="lazy"><figcaption>인도 뭄바이(봄베이)의 영국 동인도 회사 (조지 램버트·새뮤얼 스콧, 1731년 무렵)</figcaption></figure>
+  <p class="easy">동인도 회사는 <b>본사를 본국</b>에 두고, <b>아시아의 거점</b>에도 건물을 세워 무역을 했어. 중상주의로 크게 성장한 계층은? (탐구1의 답) 나라의 보호를 받으며 장사·무역을 한 <mark><b>시민 계층(상공업자)</b></mark>이야.</p>
+
+  <h3>③ 유럽 각지의 재정·군사 국가<span class="pg">133쪽</span></h3>
+  <p>대표적인 재정·군사 국가는 <mark><b>영국과 프랑스</b></mark>. 영국은 왕과 의회가 <b>타협</b>해 <b>의회 정치</b>를 발전시켰고, 프랑스는 의회를 <b>무시</b>하고 <b>절대 왕권</b>을 정당화했다.</p>
+  <p class="lead">🇬🇧 영국 — 의회가 왕을 견제하다</p>
+  <ul class="flow">
+    <li><span class="y" style="font-size:14px">16세기~</span><span>농촌의 <b>지주</b>와 도시의 <b>시민</b>이 의회에 많이 진출. 이들 중에는 <mark><b>청교도</b></mark>가 많았다.</span></li>
+    <li><span class="y">17세기</span><span>청교도 중심의 의회가 왕의 탄압에 <b>무력으로 맞서 왕을 처형</b>하고 <mark><b>공화정</b></mark>을 세움</span></li>
+    <li><span class="y">→</span><span>왕정이 부활하고 왕이 다시 <b>전제 정치</b> → 의회가 왕을 <b>추방</b>하고 <b>새 왕을 추대</b></span></li>
+    <li><span class="y">→</span><span>왕에게 의회의 권한을 존중한 <b>법안을 승인</b>받음 → <mark><b>입헌 군주정</b>의 토대</mark></span></li>
+  </ul>
+  <p class="word"><b>청교도</b> 영국의 <b>칼뱅파 신교도</b>, 영국 국교회에 반대했다 &nbsp;·&nbsp; <b>입헌 군주정</b> 왕의 권력이 <b>헌법이나 의회</b>에 일정한 제약을 받는 정치 형태</p>
+
+  <p class="lead">🇫🇷 프랑스 — 태양왕의 절대 왕권</p>
+  <div class="pic side">
+    <figure><img src="img/hist-27/louis14.webp" alt="루이 14세 초상화" loading="lazy"><figcaption>루이 14세 (이아생트 리고, 1701)</figcaption></figure>
+    <ul>
+      <li>‘<mark><b>태양왕</b></mark>’을 자처한 <mark><b>루이 14세</b></mark>가 강력한 <b>상비군과 관료제</b>를 바탕으로 <b>절대 권력</b>을 누렸다.</li>
+      <li><mark><b>베르사유 궁전</b></mark>을 지어 자신의 권위를 뽐냈다.</li>
+      <li>그러나 통치 후반기에는 <b>무리한 대외 전쟁</b>으로 재정이 나빠지고 <b>부패와 사치</b>가 심해졌다.</li>
+    </ul>
+  </div>
+  <figure class="wide"><img src="img/hist-27/versailles.webp" alt="17세기 베르사유 궁전과 정원을 하늘에서 내려다본 그림" loading="lazy"><figcaption>17세기 베르사유 궁전 (피에르 파텔, 1668)</figcaption></figure>
+
+  <p class="lead">동유럽 — 늦게 나타난 재정·군사 국가</p>
+  <ul>
+    <li>도시와 상공업의 발달이 늦었던 <b>동유럽</b>에서는 <b>농노제</b>가 오래 유지되어 서유럽보다 <b>늦게</b> 재정·군사 국가가 나타났다.</li>
+    <li><mark><b>러시아와 프로이센</b></mark>에서는 <mark><b>계몽사상</b>의 영향을 받은 군주</mark>들이 나타나 개혁을 추진하기도 했다.</li>
+  </ul>
+  <p class="word"><b>계몽사상</b> 인간의 <b>이성</b>을 믿고, 이성으로 사회를 발전시킬 수 있다고 믿는 사상</p>
+  <div class="vs">
+    <div><b class="t">🇬🇧 영국</b>왕과 의회의 <b>타협</b> → <b>의회 정치</b> 발전 → <b>입헌 군주정</b></div>
+    <div><b class="t">🇫🇷 프랑스</b>의회 <b>무시</b> → <b>절대 왕권</b> (루이 14세·베르사유 궁전)</div>
+  </div>
+  <p class="word"><b>함께 확인해요</b> ➊ 재정·군사 국가는 상업을 중시하는 (<b>중상주의</b>) 정책을 폈다. ➋ 계몽사상에 영향을 받은 군주 → <b>프리드리히 2세</b>(프로이센), <b>표트르 대제</b>(러시아)</p>
+
+  <h2>생각 쑥쑥 탐구 · 새로운 변화의 시작, 과학 혁명과 계몽사상</h2>
+  <p>17세기 유럽에서는 ‘<mark><b>과학 혁명</b></mark>’이라고 할 만큼 과학이 눈부시게 발전했어. <b>재정·군사 국가들이 과학자의 연구를 후원</b>하면서 유럽 곳곳에 <b>학회</b>가 생겼고, 이 흐름은 <mark><b>계몽사상</b></mark>으로 이어져 사회 개혁의 바탕이 됐어.</p>
+
+  <h3>④ 재판정에 선 과학자, 갈릴레이<span class="pg">134쪽</span></h3>
+  <div class="pic side">
+    <figure><img src="img/hist-27/galileo.webp" alt="갈릴레오 갈릴레이 초상화" loading="lazy"><figcaption>갈릴레이 (유스투스 서스테르만스, 1636)</figcaption></figure>
+    <ul>
+      <li>과학 혁명은 <b>천문학</b>에서 시작됐고, 그 중심에 <mark><b>갈릴레이</b></mark>가 있었다.</li>
+      <li><b>망원경</b>으로 별을 관찰해 <mark><b>천동설</b></mark>(모든 것이 지구를 중심으로 돈다)을 반박하고, <mark><b>지동설</b></mark>(태양이 중심, 지구가 태양 주위를 돈다)을 지지하는 책을 냈다.</li>
+    </ul>
+  </div>
+  <div class="cards2">
+    <div><b>🌍 천동설 (옛날 생각)</b>
+      <svg viewBox="0 0 200 120" role="img" aria-label="지구를 가운데 두고 태양과 달이 도는 천동설 그림" style="width:100%;height:auto"><circle cx="100" cy="60" r="48" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="100" cy="60" r="28" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="100" cy="60" r="11" fill="#3E8EDE"/><circle cx="148" cy="60" r="10" fill="#F2B705"/><circle cx="80" cy="41" r="5" fill="#9AA3BA"/><text x="68" y="36" text-anchor="middle" font-size="10" fill="var(--muted)">달</text><text x="100" y="86" text-anchor="middle" font-size="11" fill="var(--ink)">지구</text><text x="148" y="82" text-anchor="middle" font-size="11" fill="var(--ink)">태양</text></svg>
+      <span>지구가 가운데, 태양이 지구 둘레를 돈다 → <b>크리스트교(가톨릭교회)</b>의 견해</span></div>
+    <div><b>☀️ 지동설 (갈릴레이가 지지)</b>
+      <svg viewBox="0 0 200 120" role="img" aria-label="태양을 가운데 두고 지구가 도는 지동설 그림" style="width:100%;height:auto"><circle cx="100" cy="60" r="48" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="100" cy="60" r="28" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="100" cy="60" r="13" fill="#F2B705"/><circle cx="148" cy="60" r="8" fill="#3E8EDE"/><circle cx="80" cy="41" r="5" fill="#C8424B"/><text x="66" y="36" text-anchor="middle" font-size="10" fill="var(--muted)">금성</text><text x="100" y="88" text-anchor="middle" font-size="11" fill="var(--ink)">태양</text><text x="148" y="80" text-anchor="middle" font-size="11" fill="var(--ink)">지구</text></svg>
+      <span>태양이 가운데, 지구가 태양 둘레를 돈다</span></div>
+  </div>
+  <ul>
+    <li>갈릴레이의 주장은 당시 <b>크리스트교의 견해</b>를 정면으로 거스르는 것이었다.</li>
+    <li>종교 개혁을 거치며 보수적으로 변한 <b>가톨릭교회</b>는 갈릴레이를 <mark><b>종교 재판</b></mark>에 세워 생각이 틀렸다고 인정하라고 강요했고, 갈릴레이는 결국 지동설 지지를 <b>포기</b>했다.</li>
+    <li>그러나 <mark><b>인쇄술</b></mark>이 발전하면서 그의 연구가 많은 사람에게 퍼졌고, 유럽인의 <b>우주관</b>이 바뀌었다.</li>
+  </ul>
+  <div class="pic side">
+    <figure><img src="img/hist-27/moon.webp" alt="갈릴레이가 그린 달 그림과 실제 달 사진을 나란히 놓은 비교" loading="lazy"><figcaption>갈릴레이가 그린 달(왼쪽)과 실제 달 사진(오른쪽)</figcaption></figure>
+    <ul>
+      <li>갈릴레이는 <b>인류 최초</b>로 <b>달 표면이 울퉁불퉁하다</b>는 것을 발견했다.</li>
+      <li>지구뿐 아니라 <b>다른 행성에도 위성</b>이 있다는 것을 증명했다.</li>
+    </ul>
+  </div>
+
+  <h3>⑤ 만유인력의 법칙을 발견한 뉴턴<span class="pg">135쪽</span></h3>
+  <div class="pic side">
+    <figure><img src="img/hist-27/newton.webp" alt="아이작 뉴턴 초상화" loading="lazy"><figcaption>뉴턴 (고드프리 넬러, 1689)</figcaption></figure>
+    <ul>
+      <li>17세기의 <mark><b>뉴턴</b></mark>은 <mark><b>만유인력의 법칙</b></mark> 등 여러 과학 법칙을 발견해 자연 현상을 <b>합리적으로</b> 이해하게 했다.</li>
+      <li><b>만유인력</b>: 우주의 <b>모든 물체가 서로 끌어당기는 힘</b>. 질량이 클수록 세지고, 거리가 멀수록 약해진다. 뉴턴은 이를 <b>수학적으로 증명</b>했다.</li>
+      <li>자연의 모든 것이 일정한 법칙에 따라 움직이는 <b>거대한 기계</b>와 같다는 <mark><b>기계론적 세계관</b></mark>을 제시했다.</li>
+      <li>과학 혁명의 연구 성과를 정리·체계화해 <mark><b>과학 혁명을 완성</b></mark>했다는 평가를 받는다.</li>
+    </ul>
+  </div>
+  <p class="easy">이런 과학자들 덕분에 사람들은 <b>“인간의 이성으로 세상의 법칙을 알아낼 수 있구나!”</b> 하고 <b>이성에 믿음</b>을 갖게 됐어. 이게 바로 계몽사상으로 이어져.</p>
+
+  <h3>⑥ 인간의 이성을 믿은 로크와 루소<span class="pg">135쪽</span></h3>
+  <ul>
+    <li><b>계몽사상가</b>들은 인간이 가진 <b>이성의 빛</b>으로 무지·미신·무비판적인 믿음·불합리한 전통 같은 <b>어둠</b>을 밝힐 수 있다고 믿었다.</li>
+    <li>유럽 사회의 나쁜 전통과 관습을 깨고 <b>자유롭고 평등한 사회</b>를 만들고자 했다.</li>
+    <li>계몽사상가들의 주장은 이후 <mark><b>미국 혁명과 프랑스 혁명</b></mark>의 사상적 배경이 됐다.</li>
+  </ul>
+  <div class="cards2">
+    <div><span class="ic"><img src="img/hist-27/locke.webp" alt="로크 초상화" loading="lazy" style="width:72px;height:auto;border-radius:10px"></span><b>로크 — 저항권</b><span>사람들이 <b>자연권</b>을 지키려고 <b>계약</b>을 맺어 정부를 만들었다. 정부가 <b>자유·생명·재산</b>의 권리를 지켜 주지 않고 빼앗으면 <mark><b>저항할 수 있다</b></mark>.</span></div>
+    <div><span class="ic"><img src="img/hist-27/rousseau.webp" alt="루소 초상화" loading="lazy" style="width:72px;height:auto;border-radius:10px"></span><b>루소 — 국민 주권</b><span>사람들이 <b>사회 계약</b>으로 나라를 만들었으니 <mark><b>나라의 주인(주권)은 국민</b></mark>. 개인 이익보다 <b>공동체 전체의 이익</b>을 위해 국민이 <b>직접 나라 통치에 참여</b>해야 한다.</span></div>
+  </div>
+  <p class="word"><b>자연권</b> 사람이 태어나면서부터 갖는 고유한 권리 (자유·생명·재산 등)</p>
+  <p class="lead">함께 탐구해요 <span class="muted">— 135쪽</span></p>
+  <p class="easy">➊ 과학 혁명 시기의 과학자 → <b>코페르니쿠스</b>(지동설을 처음 주장), <b>케플러</b>(행성이 태양 둘레를 타원 궤도로 돈다는 법칙), 갈릴레이, 뉴턴</p>
+  <p class="easy">➋ 과학 혁명이 계몽사상에 준 영향 → 이성으로 <b>자연의 법칙</b>을 밝혀낼 수 있다는 걸 보고, 사람들은 이성으로 <b>사회의 잘못된 전통도 고칠 수 있다</b>고 믿게 됐어.</p>
+  <p class="easy">➌ 지배층은 로크·루소를 어떻게 생각했을까? → 왕의 권력은 신이 준 것(<b>왕권신수설</b>)이라고 했던 왕과 귀족에게, “정부에 <b>저항</b>할 수 있다”, “<b>주권은 국민</b>에게 있다”는 말은 자기 권력을 흔드는 <b>위험한 생각</b>이었을 거야.</p>
+
+  <h3>⑦ 대단원 마무리 — 신항로 개척 이후 세계의 변화<span class="pg">138쪽</span></h3>
+  <table>
+    <tr><th>아메리카</th><td>아스테카·잉카 제국 멸망, 원주민 인구 급감, 금·은 광산과 플랜테이션 개발</td></tr>
+    <tr><th>유럽</th><td>대서양 중심의 삼각 무역, 금은이 대규모로 들어와 물가 상승, 상업 발달(상업 혁명)</td></tr>
+    <tr><th>아시아</th><td>면직물·향신료·차·도자기·비단 등을 유럽에 수출, 막대한 양의 은 유입</td></tr>
+    <tr><th>아프리카</th><td>많은 사람이 노예로 아메리카에 끌려감 (노예 무역)</td></tr>
+  </table>
+  <p class="easy">플랜테이션은 오늘날에도 문제를 일으켜. 2019년 <b>아마존 산불</b>(숲을 없애고 기업형 농업을 하려고 낸 불), 열대 우림을 밀어내는 <b>팜유 농장</b>, 한 가지 품종만 기르다 병에 약해진 <b>바나나</b> 농업(농약·토양 오염), 그리고 <b>낮은 임금·아동 노동</b> 같은 노동 문제까지. (139쪽 역사로 세상 읽기)</p>
+
+  <h2>3. 꼭 외울 것</h2>
+  <ul class="keys">
+    <li><b>재정·군사 국가</b><span>정부가 군사와 재정을 독점 · 배경: 봉건 질서 쇠퇴 + 구교·신교 분열 → 전쟁</span></li>
+    <li><b>세 기둥</b><span>관료제(효율적 업무) · 상비군(언제든 동원) · 왕권신수설(왕권은 신이 줌)</span></li>
+    <li><b>시민 계층</b><span>상공업·무역 종사자, 국가 보호 ↔ 재정 지원 → 중상주의로 성장</span></li>
+    <li><b>중상주의</b><span>수입 억제·수출 장려·금은 확보 · 높은 관세 · 완성품 수입 금지·원료 수출 금지 · 특권 상인 독점권</span></li>
+    <li><b>해외 시장</b><span>식민지 확보 · 영국·프랑스 동인도 회사</span></li>
+    <li><b>영국</b><span>왕·의회 타협 → 의회 정치 · 청교도 의회가 왕 처형·공화정 → 왕 추방·새 왕 → 입헌 군주정</span></li>
+    <li><b>프랑스</b><span>의회 무시, 절대 왕권 · 태양왕 루이 14세 · 베르사유 궁전 · 후반 재정 악화</span></li>
+    <li><b>동유럽</b><span>농노제 → 늦게 등장 · 러시아·프로이센 계몽 군주(표트르 대제·프리드리히 2세)</span></li>
+    <li><b>갈릴레이</b><span>망원경, 지동설 지지 → 종교 재판 · 달 표면 울퉁불퉁 · 인쇄술로 연구 확산</span></li>
+    <li><b>뉴턴</b><span>만유인력의 법칙 · 기계론적 세계관 · 과학 혁명 완성</span></li>
+    <li><b>계몽사상</b><span>이성으로 사회 발전 · 미국 혁명·프랑스 혁명의 사상적 배경</span></li>
+    <li><b>로크 / 루소</b><span>저항권(자유·생명·재산) / 국민 주권(직접 참여)</span></li>
+  </ul>
+
+  <h2>4. 퀴즈</h2>
+  <div class="quiz">
+    <div id="quiz">
+      <p class="qt" id="qText"></p>
+      <div class="opts" id="qOpts"></div>
+      <p class="why" id="qWhy" hidden></p>
+      <div class="qfoot"><span class="qnum" id="qNum"></span><button class="qbtn main" id="qNext" type="button" hidden>다음 →</button></div>
+    </div>
+    <div id="qEnd" hidden>
+      <p class="qt" id="qScore"></p>
+      <div class="qfoot" style="justify-content:flex-start"><button class="qbtn main" id="qRestart" type="button">새 10문제</button><button class="qbtn" id="qWrongOnly" type="button">틀린 것만 다시</button></div>
+    </div>
+  </div>
+  <p class="cap" id="qPool"></p>
+
+  <p class="credit">그림 출처: 위키미디어 공용 — 뭄바이의 영국 동인도 회사(조지 램버트·새뮤얼 스콧, 퍼블릭 도메인), 루이 14세(이아생트 리고와 공방, 퍼블릭 도메인), 베르사유 궁전(피에르 파텔, 퍼블릭 도메인), 갈릴레이(유스투스 서스테르만스, 퍼블릭 도메인), 갈릴레이의 달 그림 비교(퍼블릭 도메인), 뉴턴·로크(고드프리 넬러, 퍼블릭 도메인), 루소(모리스 캉탱 드 라투르, 퍼블릭 도메인). 천동설·지동설 그림은 직접 그림.</p>
+
+</main>
+
+<script>
+(function(){
+  // 퀴즈
+  var QS = [
+    {q:'유럽에서 군사적 충돌이 심해진 배경으로 알맞은 것은?', a:'봉건 질서가 쇠퇴하고 구교와 신교가 분열했다', w:['몽골 제국이 유럽을 정복했다','아메리카 원주민이 유럽을 침략했다','산업 혁명으로 공장이 늘었다'], why:'그래서 각 나라가 화약 무기를 개발하고 군대를 길렀어. (132쪽)'},
+    {q:'정부가 군사와 재정을 독점한 국가를 무엇이라고 할까?', a:'재정·군사 국가', w:['도시 국가','봉건 국가','공화국'], why:'전쟁 비용을 마련하려고 정부 차원에서 세금을 거두며 나타났어. (132쪽)'},
+    {q:'재정·군사 국가가 세금을 거두는 등 국가 업무를 효율적으로 처리하려고 운영한 것은?', a:'관료제', w:['상비군','장원제','길드'], why:'관료제 = 일하는 조직, 상비군 = 싸우는 조직! (132쪽)'},
+    {q:'재정·군사 국가가 언제든지 동원할 수 있도록 둔 군대는?', a:'상비군', w:['용병','기사','천호'], why:'전문적인 군사력을 유지했어. (132쪽)'},
+    {q:'왕의 권력이 신으로부터 주어졌다는 주장은?', a:'왕권신수설', w:['사회 계약설','저항권','국민 주권'], why:'재정·군사 국가의 권력을 정당화하는 데 쓰였어. (132쪽)'},
+    {q:'재정·군사 국가가 관료제와 상비군 유지 비용을 마련하려고 손잡은 계층은?', a:'상공업과 무역에 종사하는 시민 계층', w:['농노','성직자','봉건 영주'], why:'시민 계층의 활동을 보호하고 재정 지원을 받았어. (132쪽)'},
+    {q:'재정·군사 국가가 펼친, 상업을 중시하는 정책은?', a:'중상주의 정책', w:['중농주의 정책','쇄국 정책','자유 방임 정책'], why:'함께 확인해요 ➊의 답! (132~133쪽)'},
+    {q:'중상주의 정책의 내용으로 옳은 것은?', a:'수입을 억제하고 수출을 장려했다', w:['수입을 장려하고 수출을 막았다','금과 은을 다른 나라에 넘겨주었다','나라가 경제에 전혀 끼어들지 않았다'], why:'많은 양의 금과 은을 확보하려고 했어. (132쪽)'},
+    {q:'중상주의 정책의 구조로 옳지 않은 것은?', a:'원료의 수출을 장려했다', w:['수입품에 높은 관세를 부과했다','완성품의 수입을 금지했다','특권 상인에게 무역 독점권을 주었다'], why:'원료의 수출은 금지했어! (132쪽 자료)'},
+    {q:'중상주의 국가가 일부 특권 상인에게 무역 독점권을 주고 받은 대가는?', a:'헌금과 세금', w:['군대','관직 포기','노예'], why:'국내 상공업 보호 자료! (132쪽)'},
+    {q:'중상주의 국가가 식민지 확보에 나선 까닭은?', a:'원료를 얻고 상품을 판매할 시장을 얻기 위해', w:['종교 재판을 피하기 위해','농노제를 없애기 위해','의회를 해산하기 위해'], why:'해외 시장 확보! (132쪽)'},
+    {q:'중상주의 정책으로 크게 성장한 계층은?', a:'시민 계층(상공업자)', w:['농노','봉건 영주','성직자'], why:'국가의 보호를 받으며 상공업과 무역으로 성장했어. (132쪽 탐구1)'},
+    {q:'영국과 프랑스를 비교한 것으로 옳은 것은?', a:'영국은 왕과 의회가 타협해 의회 정치를, 프랑스는 의회를 무시하고 절대 왕권을 정당화했다', w:['영국은 절대 왕권, 프랑스는 의회 정치를 발전시켰다','두 나라 모두 의회를 없앴다','두 나라 모두 농노제가 오래 유지됐다'], why:'133쪽 첫 문단 그대로야.'},
+    {q:'16세기 이후 영국 의회에 많이 진출한 사람들은?', a:'농촌의 지주와 도시의 시민', w:['성직자와 기사','농노와 노예','외국 상인'], why:'이들 가운데 청교도가 많았어. (133쪽)'},
+    {q:'영국 국교회에 반대한 영국의 칼뱅파 신교도는?', a:'청교도', w:['위그노','가톨릭교도','이슬람교도'], why:'청교도 중심의 의회가 왕에 맞섰어. (133쪽 용어)'},
+    {q:'17세기 영국 청교도 중심의 의회가 한 일은?', a:'왕의 탄압에 무력으로 맞서 왕을 처형하고 공화정을 세웠다', w:['왕에게 모든 권력을 바쳤다','의회를 스스로 해산했다','프랑스 왕을 영국 왕으로 모셨다'], why:'그 뒤 왕정이 부활했어. (133쪽)'},
+    {q:'왕정이 부활한 뒤 왕이 다시 전제 정치를 펴자 영국 의회가 한 일은?', a:'왕을 추방하고 새 왕을 추대해 의회 권한을 존중한 법안을 승인받았다', w:['왕을 다시 처형했다','절대 왕정을 받아들였다','의회를 없앴다'], why:'이로써 입헌 군주정의 토대가 마련됐어. (133쪽)'},
+    {q:'군주권이 헌법이나 의회에 일정한 제약을 받는 정치 형태는?', a:'입헌 군주정', w:['절대 왕정','공화정','신정 정치'], why:'영국이 이 토대를 마련했어. (133쪽 용어)'},
+    {q:'‘태양왕’을 자처하며 절대 권력을 누린 프랑스의 왕은?', a:'루이 14세', w:['프리드리히 2세','표트르 대제','루이 16세'], why:'강력한 상비군과 관료제가 바탕이었어. (133쪽)'},
+    {q:'루이 14세가 권위를 과시하려고 지은 궁전은?', a:'베르사유 궁전', w:['버킹엄 궁전','자금성','톱카프 궁전'], why:'17세기 중반 베르사유 궁전 그림! (133쪽)'},
+    {q:'루이 14세 통치 후반기의 모습으로 옳은 것은?', a:'무리한 대외 전쟁으로 재정이 악화되고 부패와 사치가 심해졌다', w:['의회 정치가 크게 발전했다','전쟁을 하지 않아 재정이 넉넉해졌다','입헌 군주정이 세워졌다'], why:'133쪽 프랑스 자료.'},
+    {q:'동유럽에서 재정·군사 국가가 서유럽보다 늦게 나타난 까닭은?', a:'도시와 상공업의 발달이 늦어 농노제가 오래 유지됐기 때문에', w:['바다와 가까워 무역이 너무 활발했기 때문에','이슬람 세계의 지배를 받았기 때문에','의회가 너무 강했기 때문에'], why:'133쪽!'},
+    {q:'계몽사상의 영향을 받은 군주가 나타나 개혁을 추진한 나라는?', a:'러시아와 프로이센', w:['영국과 프랑스','에스파냐와 포르투갈','네덜란드와 영국'], why:'프리드리히 2세(프로이센), 표트르 대제(러시아). (133쪽)'},
+    {q:'인간의 이성을 신뢰하고 그것으로 사회를 발전시킬 수 있다고 믿는 사상은?', a:'계몽사상', w:['왕권신수설','중상주의','천동설'], why:'133쪽 용어 설명.'},
+    {q:'과학 혁명 시기 유럽 각지에 학회가 설립된 배경은?', a:'재정·군사 국가들이 과학자들의 연구를 후원했다', w:['교회가 과학 연구를 금지했다','몽골이 과학자를 보냈다','과학자들이 모두 농촌으로 갔다'], why:'134쪽 첫 문단!'},
+    {q:'갈릴레이가 지지한 이론은?', a:'지동설', w:['천동설','만유인력의 법칙','왕권신수설'], why:'우주의 중심은 태양, 지구가 그 주위를 돈다! (134쪽)'},
+    {q:'‘우주의 모든 물체가 지구를 중심으로 돈다’는 주장은?', a:'천동설', w:['지동설','기계론적 세계관','만유인력'], why:'당시 크리스트교의 견해였어. (134쪽)'},
+    {q:'가톨릭교회가 갈릴레이에게 한 일은?', a:'종교 재판에 세워 자신의 생각이 잘못됐다고 인정하라고 강요했다', w:['교황으로 뽑았다','연구비를 후원했다','망원경을 선물했다'], why:'갈릴레이는 결국 지동설 지지를 포기했어. (134쪽)'},
+    {q:'갈릴레이의 연구 성과가 많은 사람에게 공유될 수 있었던 까닭은?', a:'인쇄술이 발전했기 때문에', w:['역참이 있었기 때문에','종교 재판에서 이겼기 때문에','라디오가 있었기 때문에'], why:'이것이 유럽인의 우주관을 바꿨어. (134쪽)'},
+    {q:'갈릴레이가 우주를 관측해 밝혀낸 사실은?', a:'달의 표면이 울퉁불퉁하고, 다른 행성에도 위성이 있다', w:['지구가 우주의 중심이다','달은 스스로 빛을 낸다','태양이 지구 둘레를 돈다'], why:'갈릴레이가 그린 달의 모습 자료! (134쪽)'},
+    {q:'우주의 모든 물체가 서로 끌어당기는 힘에 대한 법칙을 발견한 사람은?', a:'뉴턴', w:['갈릴레이','로크','코페르니쿠스'], why:'만유인력의 법칙! 수학적으로 증명했어. (135쪽)'},
+    {q:'만유인력에 대한 설명으로 옳은 것은?', a:'서로의 질량이 클수록 세지고, 거리가 멀수록 약해진다', w:['질량이 클수록 약해진다','거리가 멀수록 세진다','지구에만 있는 힘이다'], why:'135쪽 말풍선!'},
+    {q:'자연의 모든 것이 일정한 법칙에 따라 움직이는 거대한 기계와 같다고 보는 관점은?', a:'기계론적 세계관', w:['천동설','왕권신수설','중상주의'], why:'뉴턴이 제시했어. (135쪽)'},
+    {q:'과학 혁명을 완성했다는 평가를 받는 사람은?', a:'뉴턴', w:['갈릴레이','루소','로크'], why:'연구 성과를 정리하고 자연 과학 지식을 체계화했어. (135쪽)'},
+    {q:'계몽사상가들의 주장이 사상적 배경이 된 사건은?', a:'미국 혁명과 프랑스 혁명', w:['신항로 개척','종교 개혁','십자군 전쟁'], why:'135쪽!'},
+    {q:'정부가 자유·생명·재산의 권리를 침해하면 저항할 수 있다고 주장한 사람은?', a:'로크', w:['루소','뉴턴','루이 14세'], why:'로크 = 저항권! (135쪽)'},
+    {q:'국가의 주권이 국민에게 있으며 국민이 직접 국가 통치에 참여해야 한다고 주장한 사람은?', a:'루소', w:['로크','갈릴레이','세풀베다'], why:'루소 = 국민 주권! (135쪽)'},
+    {q:'인간이 태어나면서부터 갖는 고유한 권리는?', a:'자연권', w:['저항권','주권','독점권'], why:'로크는 자연권을 지키려고 정부를 만들었다고 했어. (135쪽)'},
+    {q:'지동설을 처음 주장하고, 과학 혁명 시기의 과학자로 검색해 볼 만한 사람은?', a:'코페르니쿠스', w:['라스카사스','마젤란','마르코 폴로'], why:'함께 탐구해요 ➊ 추천 검색어: 코페르니쿠스, 케플러. (135쪽)'},
+    {q:'당시 지배층이 로크와 루소의 사상을 위험하게 여겼을 까닭으로 가장 알맞은 것은?', a:'저항권과 국민 주권이 왕권신수설과 절대 왕권을 흔들었기 때문에', w:['과학 연구를 금지했기 때문에','중상주의를 지지했기 때문에','왕의 권력이 신에게서 왔다고 했기 때문에'], why:'함께 탐구해요 ➌ (135쪽)'},
+    {q:'[대단원 마무리] 상도·대도·패자 자료와 관련 있는 나라가 세계사에 미친 영향은?', a:'역참과 바닷길을 정비해 동서 교류를 크게 확대했다', w:['신항로를 개척해 아메리카에 도착했다','삼각 무역으로 노예를 팔았다','지동설을 처음 주장했다'], why:'몽골 제국(원)이야. 유라시아·인도양 교역권이 커졌어. (138쪽)'},
+    {q:'[대단원 마무리] 서로 관련 있는 것끼리 바르게 연결한 것은?', a:'청 - 『사고전서』 편찬', w:['무굴 제국 - 조카마치','에도 막부 - 타지마할','오스만 제국 - 『사고전서』'], why:'청-사고전서, 에도 막부-조카마치, 무굴-타지마할, 오스만-이스탄불! (138쪽)'},
+    {q:'[대단원 마무리] 신항로 개척 이후 아프리카에서 나타난 변화는?', a:'많은 사람이 노예로 아메리카에 끌려갔다', w:['막대한 양의 은이 들어왔다','물가가 올라 상업 혁명이 일어났다','아스테카 제국이 멸망했다'], why:'은 유입은 아시아, 상업 혁명은 유럽, 아스테카 멸망은 아메리카! (138쪽 ㉣)'},
+    {q:'[대단원 마무리] ‘면직물·향신료·차·도자기·비단 등을 유럽에 수출하고 막대한 양의 은이 들어왔다’는 어느 지역의 변화일까?', a:'아시아', w:['유럽','아메리카','아프리카'], why:'138쪽 ㉢!'},
+    {q:'[역사로 세상 읽기] 오늘날 플랜테이션 농업이 일으키는 문제가 아닌 것은?', a:'원주민 인구가 늘어 도시가 커진다', w:['열대 우림이 파괴된다','단일 품종 재배로 전염병에 약해지고 농약으로 토양이 오염된다','낮은 임금과 아동 노동 문제가 생긴다'], why:'아마존 산불, 팜유 농장, 바나나 농업, 아동 노동! (138~139쪽)'}
+  ];
+  function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t;} return a; }
+  var order=[], idx=0, right=0, wrong=[], retrying=false;
+  var qText=document.getElementById('qText'), qOpts=document.getElementById('qOpts'), qWhy=document.getElementById('qWhy'),
+      qNum=document.getElementById('qNum'), qNext=document.getElementById('qNext'), quiz=document.getElementById('quiz'), qEnd=document.getElementById('qEnd');
+  function start(list,isRetry){ retrying=!!isRetry; order=list; idx=0; right=0; wrong=[]; quiz.hidden=false; qEnd.hidden=true; show(); }
+  function show(){
+    var it=QS[order[idx]];
+    qText.textContent=it.q; qWhy.hidden=true; qNext.hidden=true;
+    qNum.textContent=(idx+1)+' / '+order.length+' · 맞힌 개수 '+right;
+    qOpts.innerHTML='';
+    shuffle([it.a].concat(it.w)).forEach(function(t){
+      var b=document.createElement('button'); b.type='button'; b.textContent=t;
+      b.onclick=function(){
+        qOpts.querySelectorAll('button').forEach(function(x){ x.disabled=true; if(x.textContent===it.a) x.classList.add('right'); });
+        if(t===it.a){ right++; } else { b.classList.add('wrong'); wrong.push(order[idx]); }
+        qWhy.textContent=(t===it.a?'⭕ 맞았어! ':'❌ 아쉽다. ')+it.why; qWhy.hidden=false;
+        qNum.textContent=(idx+1)+' / '+order.length+' · 맞힌 개수 '+right;
+        qNext.textContent=idx+1<order.length?'다음 →':'결과 보기';
+        qNext.hidden=false; qNext.focus({preventScroll:true});
+      };
+      qOpts.appendChild(b);
+    });
+  }
+  qNext.onclick=function(){ idx++; if(idx<order.length){ show(); } else { end(); } };
+  function end(){
+    quiz.hidden=true; qEnd.hidden=false; if(!retrying){ done+=order.length; SeeunTrack.quiz(right,order.length); } poolText();
+    var n=order.length;
+    document.getElementById('qScore').textContent=n+'문제 중 '+right+'개 맞혔어! '+(right===n?'완벽해 🎉':right>=n-2?'거의 다 왔어 👍':'틀린 것만 한 번 더 보자 💪');
+    document.getElementById('qWrongOnly').hidden=wrong.length===0;
+  }
+  document.getElementById('qWrongOnly').onclick=function(){ start(shuffle(wrong),true); };
+  var deck=[], pos=0, done=0;
+  function round(){
+    if(pos>=deck.length){ deck=shuffle(QS.map(function(_,i){return i})); pos=0; }
+    var r=deck.slice(pos,pos+10); pos+=10; start(r);
+  }
+  function poolText(){ document.getElementById('qPool').textContent=done>=QS.length?QS.length+'문제를 한 바퀴 다 풀었어! 👏 이제 다시 섞어서 나와.':'모두 '+QS.length+'문제 · 한 판에 10문제씩 겹치지 않게 나와 · 지금까지 '+done+'문제 풀었어'; }
+  document.getElementById('qRestart').onclick=round;
+  round(); poolText();
+})();
+</script>
+</body>
+</html>

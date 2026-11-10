@@ -93,7 +93,7 @@ details.more summary{cursor:pointer;color:var(--muted);font-size:15px}
   var KEY = "seeun.rv.v1", SKEY = "seeun.study.v1";
   var NAME = {sci:"과학", hist:"역사"};
   var LESSONS = (window.LESSONS || []).filter(function(x){ return NAME[x.subj]; })
-    .sort(function(a, b){ return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    .sort(function(a, b){ return a.date < b.date ? 1 : a.date > b.date ? -1 : a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
   var $ = function(id){ return document.getElementById(id); };
   function pad(n){ return (n < 10 ? "0" : "") + n; }
   function today(){ var d = new Date(); return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
@@ -123,7 +123,7 @@ details.more summary{cursor:pointer;color:var(--muted);font-size:15px}
     var x = list.filter(function(l){ return l.id === cur.id; })[0] || list[0];
     cur.id = x.id;
     var sel = $("sel"); sel.textContent = "";
-    list.forEach(function(l){ var o = document.createElement("option"); o.value = l.id; o.textContent = md(l.date) + " · " + l.title + (l.date === today() ? " (오늘)" : ""); o.selected = l.id === x.id; sel.appendChild(o); });
+    list.forEach(function(l){ var o = document.createElement("option"); o.value = l.id; var tp = /주제 \d+/.exec(l.unit || ""); o.textContent = (tp ? tp[0] : md(l.date)) + " · " + l.title; o.selected = l.id === x.id; sel.appendChild(o); });
     $("pick").hidden = list.length < 2;
     if(f.getAttribute("data-id") !== x.id){ f.setAttribute("data-id", x.id); f.style.height = "60vh"; f.src = x.file + "?embed=1"; }
   }
