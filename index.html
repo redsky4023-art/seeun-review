@@ -6,11 +6,11 @@
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="세은 복습방">
+<meta name="apple-mobile-web-app-title" content="세은 기말고사">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
-<title>세은이 복습방</title>
+<title>세은이 기말고사 공부방</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
@@ -55,7 +55,7 @@ details.more summary{cursor:pointer;color:var(--muted);font-size:15px}
 </head>
 <body>
 <div class="wrap">
-  <h1>세은이 복습방</h1>
+  <h1>세은이 기말고사 공부방</h1>
   <p class="dday" id="dday" hidden></p>
 
   <div class="subj" role="group" aria-label="과목">
@@ -182,7 +182,7 @@ details.more summary{cursor:pointer;color:var(--muted);font-size:15px}
     var out = JSON.parse(JSON.stringify(D)); out.study = load(SKEY, {days:{}, lessons:{}});
     var a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([JSON.stringify(out)], {type:"application/json"}));
-    a.download = "세은복습방-백업-" + today() + ".json"; document.body.appendChild(a); a.click();
+    a.download = "세은기말고사-백업-" + today() + ".json"; document.body.appendChild(a); a.click();
     setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
   });
   $("importBtn").addEventListener("click", function(){ $("importFile").click(); });

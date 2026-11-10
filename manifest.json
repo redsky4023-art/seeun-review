@@ -1,6 +1,6 @@
 {
-  "name": "세은이 복습방",
-  "short_name": "세은 복습방",
+  "name": "세은이 기말고사 공부방",
+  "short_name": "세은 기말고사",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
