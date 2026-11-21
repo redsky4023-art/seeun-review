@@ -1,6 +1,8 @@
 // 복습방에 올라가는 단원 목록 — 새 단원을 만들면 맨 위에 한 줄 추가
 // date = 그 단원을 배운(사진을 받은) 날, subj = review.html 의 과목 키, plan = 「오늘 할 일」 칸 수
 window.LESSONS = [
+  // 과학 — 2026-11-21
+  {id:"sci-10-current", date:"2026-11-21", subj:"sci", title:"전류, 전압, 저항", unit:"Ⅶ-1 · print 10", pages:"1~8쪽", book:"학교 프린트", file:"lessons/sci-10-current.html", plan:4, quiz:50},
   // 2학기 기말고사 범위 (주제 19~40) — 2026-11-10
   {id:"hist-19-mingqing", date:"2026-11-10", subj:"hist", title:"명·청의 발전과 동아시아 지역 질서의 변화", unit:"Ⅲ-2 · 주제 19", pages:"110~111쪽", book:"해냄에듀", file:"lessons/hist-19-mingqing.html", plan:4, quiz:40},
   {id:"hist-20-mingqing-economy", date:"2026-11-10", subj:"hist", title:"명·청의 경제 발전과 사회·문화", unit:"Ⅲ-2 · 주제 20", pages:"112~115쪽", book:"해냄에듀", file:"lessons/hist-20-mingqing-economy.html", plan:4, quiz:45},
