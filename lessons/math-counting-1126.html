@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko" data-lesson="math-counting-1126">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>경우의 수 5문제 · 수학</title>
+<script src="track.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FFFFFF;--ink:#1B2340;--muted:#6B7390;--line:#E3E7EF;--soft:#F4F6FA;--accent:#3B5BDB;--mark:#FFE45C;--ok:#0F9B83;--okbg:#E2F5F0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#8FA8FF;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E}}
+:root[data-theme="dark"]{--bg:#14181F;--ink:#E8ECF5;--muted:#9AA3BA;--line:#2B3345;--soft:#1C222D;--accent:#8FA8FF;--mark:#C9A92A;--ok:#4DD3B8;--okbg:#15332E}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;font-size:17px;line-height:1.8;padding:0 16px}
+.wrap{max-width:720px;margin:0 auto;padding:28px 0 64px}
+html.embed body{background:transparent;padding:0}
+html.embed .wrap{padding:8px 0 24px}
+html.embed .back{display:none}
+.back{font-size:14px;color:var(--muted);text-decoration:none}
+h1,h2{font-family:"Jua","Noto Sans KR",sans-serif;font-weight:400;margin:0;line-height:1.35}
+h1{font-size:30px}
+h2{font-size:24px;margin:44px 0 14px;padding-bottom:8px;border-bottom:3px solid var(--ink)}
+h2 .no{color:var(--accent)}
+.sub{color:var(--muted);font-size:14px;margin:6px 0 0}
+p{margin:8px 0}
+b{font-weight:700}
+mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit;padding:0 1px}
+.prob{background:var(--soft);border-radius:14px;padding:14px 18px;margin:12px 0}
+.prob .ch{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:6px}
+.fig{display:block;width:100%;max-width:360px;height:auto;margin:10px auto 2px}
+.fig line{stroke:var(--ink);stroke-width:2}
+.fig circle{fill:var(--ink)}
+.fig text{fill:var(--ink);font-style:italic;font-size:16px}
+details{margin:12px 0;border:2px solid var(--line);border-radius:14px;padding:0 16px}
+details[open]{padding-bottom:12px}
+summary{cursor:pointer;padding:12px 0;font-family:"Jua",sans-serif;font-size:19px;color:var(--accent);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▶ ";font-size:14px}
+details[open] summary::before{content:"▼ "}
+.calc{font-variant-numeric:tabular-nums;background:var(--soft);border-radius:10px;padding:8px 14px;margin:8px 0;font-size:17px}
+.ans{background:var(--okbg);border-radius:12px;padding:10px 16px;margin:12px 0 4px;font-family:"Jua",sans-serif;font-size:21px}
+.tip{border-left:4px solid var(--mark);padding:2px 0 2px 12px;margin:12px 0 0;font-size:16px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:16px;margin:10px 0}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top;white-space:nowrap}
+th{font-weight:700}
+td.n{text-align:right;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+.keys{margin:0;padding-left:1.2em}
+.keys li{margin:6px 0}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="../">← 기말고사 공부방</a>
+  <h1>경우의 수 5문제</h1>
+  <p class="sub">먼저 직접 풀어 보고, 그다음에 「풀이 보기」를 눌러 확인해요.</p>
+
+  <h2>먼저 기억할 것 두 가지</h2>
+  <ul class="keys">
+    <li><b>곱하기</b>: 「이것도 하고 <mark>동시에</mark> 저것도 한다」 → 가짓수를 곱해요.</li>
+    <li><b>더하기</b>: 「이 경우 <mark>또는</mark> 저 경우」처럼 경우를 나눴으면 → 나눈 결과를 더해요.</li>
+    <li><b>0 카드</b>가 있으면 → <mark>맨 앞자리에는 0이 올 수 없어요.</mark></li>
+  </ul>
+
+  <h2><span class="no">1011</span> 두 직선 위의 점 잇기</h2>
+  <div class="prob">
+    평행한 두 직선 l, m 위에 각각 3개의 점, 4개의 점이 있다. 직선 l 위의 한 점과 직선 m 위의 한 점을 연결하여 만들 수 있는 선분의 개수는?
+    <svg class="fig" viewBox="0 0 360 110" aria-label="직선 l 위에 점 3개, 직선 m 위에 점 4개">
+      <line x1="20" y1="25" x2="320" y2="25"/><circle cx="60" cy="25" r="5"/><circle cx="160" cy="25" r="5"/><circle cx="270" cy="25" r="5"/><text x="330" y="31">l</text>
+      <line x1="20" y1="85" x2="320" y2="85"/><circle cx="60" cy="85" r="5"/><circle cx="140" cy="85" r="5"/><circle cx="210" cy="85" r="5"/><circle cx="280" cy="85" r="5"/><text x="328" y="91">m</text>
+    </svg>
+    <div class="ch"><span>① 7</span><span>② 9</span><span>③ 10</span><span>④ 12</span><span>⑤ 14</span></div>
+  </div>
+  <details>
+    <summary>풀이 보기</summary>
+    <p>선분 하나를 만들려면 <b>l에서 점 하나</b>, <b>m에서 점 하나</b>를 <mark>둘 다</mark> 골라야 해요.</p>
+    <p>l에서 고르는 방법 3가지, m에서 고르는 방법 4가지 → 곱해요.</p>
+    <div class="calc">3 × 4 = 12</div>
+    <div class="ans">답: ④ 12</div>
+    <p class="tip">같은 직선 위의 두 점끼리는 잇지 않아요. 문제에서 「l의 한 점과 m의 한 점」이라고 했으니까요.</p>
+  </details>
+
+  <h2><span class="no">1005</span> B가 꼭 뽑히는 대표 3명</h2>
+  <div class="prob">A, B, C, D, E 5명 중에서 대표 3명을 뽑을 때, B가 뽑히는 경우의 수를 구하시오.</div>
+  <details>
+    <summary>풀이 보기</summary>
+    <p>B는 <mark>이미 뽑혔다고 치고</mark> 빼 놓아요. 그러면 남은 자리는 <b>2자리</b>예요.</p>
+    <p>나머지 A, C, D, E 4명 중에서 2명을 고르면 돼요. 대표는 <b>순서가 없으니까</b> (A, C)와 (C, A)는 같은 거예요.</p>
+    <div class="calc">(4 × 3) ÷ 2 = 6</div>
+    <p>직접 써 봐도 6개예요: AC, AD, AE, CD, CE, DE</p>
+    <div class="ans">답: 6</div>
+    <p class="tip">「반드시 들어간다」 → 그 사람을 먼저 넣고, 남은 사람 중에서 남은 자리만 골라요.</p>
+  </details>
+
+  <h2><span class="no">1002</span> 회장 · 여자 부회장 · 남자 부회장</h2>
+  <div class="prob">여학생 3명과 남학생 5명 중에서 회장 1명과 여자 부회장 1명, 남자 부회장 1명을 뽑는 경우의 수를 구하시오.</div>
+  <details>
+    <summary>풀이 보기</summary>
+    <p>회장이 <b>여학생</b>이냐 <b>남학생</b>이냐에 따라 부회장 후보 수가 달라져요. 회장이 된 사람은 부회장이 될 수 없으니까요. 그래서 <mark>두 경우로 나눠요.</mark></p>
+    <div class="tbl"><table>
+      <tr><th>경우</th><th>회장</th><th>여자 부회장</th><th>남자 부회장</th><th></th></tr>
+      <tr><td>① 회장이 여학생</td><td>3</td><td>남은 여학생 2</td><td>5</td><td class="n">3×2×5 = 30</td></tr>
+      <tr><td>② 회장이 남학생</td><td>5</td><td>3</td><td>남은 남학생 4</td><td class="n">5×3×4 = 60</td></tr>
+    </table></div>
+    <p>①과 ②는 동시에 일어나지 않으니까 더해요.</p>
+    <div class="calc">30 + 60 = 90</div>
+    <div class="ans">답: 90</div>
+    <p class="tip">8 × 3 × 5 = 120 으로 하면 틀려요! 회장이 된 사람이 부회장으로 또 뽑히는 경우까지 세게 돼요.</p>
+  </details>
+
+  <h2><span class="no">0998</span> 네 자리 수 중 5의 배수</h2>
+  <div class="prob">0, 1, 2, 3, 4, 5가 각각 하나씩 적힌 6장의 카드 중에서 서로 다른 4장의 카드를 뽑아 만들 수 있는 네 자리 자연수 중 5의 배수의 개수를 구하시오.</div>
+  <details>
+    <summary>풀이 보기</summary>
+    <p>5의 배수는 <mark>일의 자리가 0 또는 5</mark>예요. 그래서 끝자리부터 정하고, 두 경우로 나눠요.</p>
+    <p><b>① 일의 자리가 0</b><br>남은 카드 1, 2, 3, 4, 5 (0이 없으니 앞자리 걱정 없음)<br>천의 자리 5가지 → 백의 자리 4가지 → 십의 자리 3가지</p>
+    <div class="calc">5 × 4 × 3 = 60</div>
+    <p><b>② 일의 자리가 5</b><br>남은 카드 0, 1, 2, 3, 4<br>천의 자리에는 <mark>0이 못 와요</mark> → 1, 2, 3, 4 중 4가지<br>백의 자리: 남은 4장(이제 0도 됨) 4가지 → 십의 자리 3가지</p>
+    <div class="calc">4 × 4 × 3 = 48</div>
+    <div class="calc">60 + 48 = 108</div>
+    <div class="ans">답: 108</div>
+    <p class="tip">①과 ②의 계산이 다른 이유: ①에서는 0을 이미 끝에 써 버려서 앞자리에 0이 올 일이 없고, ②에서는 0이 남아 있어서 천의 자리에서 빼야 해요.</p>
+  </details>
+
+  <h2><span class="no">0997</span> 두 자리 수와 짝수</h2>
+  <div class="prob">0, 1, 2, 3이 각각 하나씩 적힌 4장의 카드 중에서 서로 다른 2장의 카드를 뽑아 만들 수 있는 두 자리 자연수의 개수를 a, 두 자리 자연수 중 짝수의 개수를 b라 할 때, a+b의 값을 구하시오.</div>
+  <details>
+    <summary>풀이 보기</summary>
+    <p><b>a: 두 자리 자연수 전체</b><br>십의 자리: 0이 못 오니까 1, 2, 3 → 3가지<br>일의 자리: 남은 3장 → 3가지 (0도 됨)</p>
+    <div class="calc">a = 3 × 3 = 9</div>
+    <p><b>b: 그중 짝수</b> — 일의 자리가 <mark>0 또는 2</mark></p>
+    <p>· 일의 자리 0 → 십의 자리 1, 2, 3 → 10, 20, 30 (3개)<br>· 일의 자리 2 → 십의 자리 1, 3 (0은 안 됨) → 12, 32 (2개)</p>
+    <div class="calc">b = 3 + 2 = 5</div>
+    <div class="calc">a + b = 9 + 5 = 14</div>
+    <div class="ans">답: 14</div>
+    <p class="tip">0998번이랑 똑같은 방법이에요. <b>끝자리 먼저 정하기 → 0이 앞에 오는지 확인하기.</b></p>
+  </details>
+
+  <h2>정답 한눈에</h2>
+  <div class="tbl"><table>
+    <tr><th>문제</th><td>1011</td><td>1005</td><td>1002</td><td>0998</td><td>0997</td></tr>
+    <tr><th>정답</th><td class="n">④ 12</td><td class="n">6</td><td class="n">90</td><td class="n">108</td><td class="n">14</td></tr>
+  </table></div>
+</main>
+</body>
+</html>
